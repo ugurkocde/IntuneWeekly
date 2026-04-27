@@ -135,7 +135,6 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 0.5px solid var(--rule
         li.appendChild(el('div', { 'class': 'archive-headline' }, headline));
         const links = el('div', { 'class': 'archive-links' });
         if (e.pdf_url) links.appendChild(el('a', { href: e.pdf_url }, 'Read PDF'));
-        if (e.linkedin_url) links.appendChild(el('a', { href: e.linkedin_url }, 'LinkedIn version'));
         li.appendChild(links);
         archive.appendChild(li);
     });
