@@ -51,7 +51,7 @@
         "date": "2026-05-01T00:00:00+00:00",
         "precision": "month",
         "title": "macOS Custom Compliance",
-        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=ID%20553222",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=553222",
         "label": "In development",
         "source": "Roadmap"
       },
@@ -67,7 +67,7 @@
         "date": "2026-06-01T00:00:00+00:00",
         "precision": "month",
         "title": "Intune Suite - Improved elevation detection",
-        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=ID%20399933",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=399933",
         "label": "In development",
         "source": "Roadmap"
       },
@@ -91,7 +91,7 @@
         "date": "2026-07-01T00:00:00+00:00",
         "precision": "month",
         "title": "Intune Suite - Unattended Remote Help for Windows - Remote Sign-in",
-        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=ID%20499154",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=499154",
         "label": "In development",
         "source": "Roadmap"
       },

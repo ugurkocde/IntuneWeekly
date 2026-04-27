@@ -2,12 +2,17 @@
 _Covering April 20 - 26, 2026_
 Samsung Knox wipe trap, Secure Boot limbo, and Autopatch report breakage demand admin attention now.
 
+## Community shoutout
+
+**[Janic Verboon](https://www.linkedin.com/in/janic-verboon-04b11b114/)** - _EAM-AutoUpdater_
+Built EAM-AutoUpdater, a free PowerShell automation that watches the Intune Enterprise App Catalog for new app versions, deploys them, and migrates assignments, scope tags, and Enrollment Status Page references from the previous version. Turns a recurring manual chore into an Azure Automation runbook. [Read more](https://github.com/JanicVerboon/EAM-AutoUpdater)
+
 ## On the radar
 
-- **[Samsung Knox OEMConfig Wipe Block Leaves Devices Unrecoverable](https://www.reddit.com/r/sysadmin/comments/1svi8te/warning_with_fully_managed_samsung_devices_and_intune/)** _(Reddit)_ - A KSP profile that blocks device reset causes Intune to report a successful wipe while the device never resets, with no recovery path — audit all KSP profiles before any production deployment.
-- **[Secure Boot Certificate Rollout Stranding Devices in Observation](https://www.reddit.com/r/sysadmin/comments/1srp86f/im_incredibly_confused_by_microsofts_remediation/)** _(Reddit)_ - Fleets with devices approaching six years old risk being stuck with UEFICA2023Status 'Not started' as the update window tightens — validate certificate status now using community detection scripts.
-- **[Autopatch Quality Updates Report Broken for Weeks](https://www.reddit.com/r/Intune/comments/1sso3r4/is_the_autopatch_management_status_report_just/)** _(Reddit)_ - Multiple admins confirm the managed-for-quality-updates count has shown zero for weeks despite devices receiving updates normally — check your report before assuming compliance coverage is accurate.
-- **[Hotpatch 24H2: ARM64 Config Gap and Secure Boot Miss Risk](https://www.reddit.com/r/Intune/comments/1ss4gs9/opinions_of_hot_patch/)** _(Reddit)_ - ARM64 devices need a separate config profile that documentation doesn't surface clearly, and one fleet saw Secure Boot updates skipped while Hotpatch was active — validate both before broad rollout.
+- **[Samsung Knox OEMConfig Wipe Block Leaves Devices Unrecoverable](https://www.reddit.com/r/sysadmin/comments/1svi8te/warning_with_fully_managed_samsung_devices_and_intune/)** _(Reddit)_ - A KSP profile that blocks device reset causes Intune to report a successful wipe while the device never resets, with no recovery path - audit all KSP profiles before any production deployment.
+- **[Secure Boot Certificate Rollout Stranding Devices in Observation](https://www.reddit.com/r/sysadmin/comments/1srp86f/im_incredibly_confused_by_microsofts_remediation/)** _(Reddit)_ - Fleets with devices approaching six years old risk being stuck with UEFICA2023Status 'Not started' as the update window tightens - validate certificate status now using community detection scripts.
+- **[Autopatch Quality Updates Report Broken for Weeks](https://www.reddit.com/r/Intune/comments/1sso3r4/is_the_autopatch_management_status_report_just/)** _(Reddit)_ - Multiple admins confirm the managed-for-quality-updates count has shown zero for weeks despite devices receiving updates normally - check your report before assuming compliance coverage is accurate.
+- **[Hotpatch 24H2: ARM64 Config Gap and Secure Boot Miss Risk](https://www.reddit.com/r/Intune/comments/1ss4gs9/opinions_of_hot_patch/)** _(Reddit)_ - ARM64 devices need a separate config profile that documentation doesn't surface clearly, and one fleet saw Secure Boot updates skipped while Hotpatch was active - validate both before broad rollout.
 - **[AI Speed Is Making Patch Compliance a Security Baseline](https://techcommunity.microsoft.com/t5/intune-customer-success/as-vulnerability-discovery-moves-at-ai-speed-keeping-current-is/ba-p/4513766)** _(Tech Community)_ - Microsoft's Intune Customer Success team frames AI-accelerated exploitation as a reason to treat Autopatch and update compliance as a foundational security control, not an operational nicety.
 
 ## Landing in your tenant soon
@@ -29,7 +34,7 @@ r/INTUNE /// A community member confirmed that Microsoft is actively developing 
 ## Action required
 
 **Samsung Knox OEMConfig Wipe Block: Devices Can Become Permanently Unrecoverable** [Breaking Change]
-r/SYSADMIN /// If you deploy a Knox Service Plugin OEMConfig profile that blocks device reset, Intune will report a wipe as successful and remove the device from management, but the phone never actually resets — KSP continues enforcing the policy at firmware level with no recovery path. Audit any KSP profiles that include wipe or reset restrictions before deploying to production, and avoid enabling this setting on test devices you may need to reflash.
+r/SYSADMIN /// If you deploy a Knox Service Plugin OEMConfig profile that blocks device reset, Intune will report a wipe as successful and remove the device from management, but the phone never actually resets - KSP continues enforcing the policy at firmware level with no recovery path. Audit any KSP profiles that include wipe or reset restrictions before deploying to production, and avoid enabling this setting on test devices you may need to reflash.
 [Read more](https://www.reddit.com/r/sysadmin/comments/1svi8te/warning_with_fully_managed_samsung_devices_and_intune/)
 
 ---
@@ -53,7 +58,7 @@ r/INTUNE /// Microsoft has shipped the ability to trigger Windows Updates during
 ## From the field
 
 **EPM Local Admin Removal: Start Small, Audit First, Communicate Early**
-r/SYSADMIN /// Two separate threads this week — one covering a 140-user environment and one a 90% local admin fleet — converged on the same advice: run EPM in audit mode across pilot cohorts before removing rights, group elevation hits by publisher and path, and get leadership to send communications before users lose access. Silent rollouts are universally recommended against; the surprise is worse than the change.
+r/SYSADMIN /// Two separate threads this week - one covering a 140-user environment and one a 90% local admin fleet - converged on the same advice: run EPM in audit mode across pilot cohorts before removing rights, group elevation hits by publisher and path, and get leadership to send communications before users lose access. Silent rollouts are universally recommended against; the surprise is worse than the change.
 [Read more](https://www.reddit.com/r/sysadmin/comments/1sucuh6/half_our_company_is_local_admin_security_team/)
 
 **Autopatch "Managed for Quality Updates" Report Showing Zero for Weeks**
@@ -80,7 +85,7 @@ r/INTUNE /// A community admin published a Logic App solution that monitors expi
 r/INTUNE /// Multiple admins hit a widespread "Unable to fetch any device" error in the Intune device list on 22 April; the issue resolved itself within hours but Microsoft support responded saying they could not reproduce it and saw no flags. No root cause or incident post was published.
 [Read more](https://www.reddit.com/r/Intune/comments/1ssgr95/something_went_wrong_viewing_device_list_anyone/)
 
-**macOS Platform SSO Requires ADE Enrollment — User-Driven Company Portal Enrollment Falls Short**
+**macOS Platform SSO Requires ADE Enrollment - User-Driven Company Portal Enrollment Falls Short**
 r/INTUNE /// Admins attempting to enable Entra ID login at the macOS lock screen via Platform SSO on devices not in Apple Business Manager are finding that user-driven Company Portal enrollment alone is insufficient; ADE (Automated Device Enrollment) via ABM is effectively required for full Platform SSO functionality. Devices added to ABM via Apple Configurator still require a wipe, leaving existing in-use fleets in a difficult position.
 [Read more](https://www.reddit.com/r/Intune/comments/1sruk61/enroll_existing_macs_into_intune_enable_entra_id/)
 
