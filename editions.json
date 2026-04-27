@@ -1,1 +1,124 @@
-[]
+[
+  {
+    "date": "2026-04-27",
+    "edition_no": 1,
+    "date_range": "April 20 - 26, 2026",
+    "headline": "Samsung Knox wipe trap, Secure Boot limbo, and Autopatch report breakage demand admin attention now.",
+    "pdf_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-04-27/intune-weekly.pdf",
+    "linkedin_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-04-27/linkedin-article.md",
+    "radar_items": [
+      {
+        "title": "Samsung Knox OEMConfig Wipe Block Leaves Devices Unrecoverable",
+        "why": "A KSP profile that blocks device reset causes Intune to report a successful wipe while the device never resets, with no recovery path \u2014 audit all KSP profiles before any production deployment.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/sysadmin/comments/1svi8te/warning_with_fully_managed_samsung_devices_and_intune/"
+      },
+      {
+        "title": "Secure Boot Certificate Rollout Stranding Devices in Observation",
+        "why": "Fleets with devices approaching six years old risk being stuck with UEFICA2023Status 'Not started' as the update window tightens \u2014 validate certificate status now using community detection scripts.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/sysadmin/comments/1srp86f/im_incredibly_confused_by_microsofts_remediation/"
+      },
+      {
+        "title": "Autopatch Quality Updates Report Broken for Weeks",
+        "why": "Multiple admins confirm the managed-for-quality-updates count has shown zero for weeks despite devices receiving updates normally \u2014 check your report before assuming compliance coverage is accurate.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1sso3r4/is_the_autopatch_management_status_report_just/"
+      },
+      {
+        "title": "Hotpatch 24H2: ARM64 Config Gap and Secure Boot Miss Risk",
+        "why": "ARM64 devices need a separate config profile that documentation doesn't surface clearly, and one fleet saw Secure Boot updates skipped while Hotpatch was active \u2014 validate both before broad rollout.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1ss4gs9/opinions_of_hot_patch/"
+      },
+      {
+        "title": "AI Speed Is Making Patch Compliance a Security Baseline",
+        "why": "Microsoft's Intune Customer Success team frames AI-accelerated exploitation as a reason to treat Autopatch and update compliance as a foundational security control, not an operational nicety.",
+        "source_label": "Tech Community",
+        "url": "https://techcommunity.microsoft.com/t5/intune-customer-success/as-vulnerability-discovery-moves-at-ai-speed-keeping-current-is/ba-p/4513766"
+      }
+    ],
+    "timeline_items": [
+      {
+        "date": "2026-04-30T08:00:00+00:00",
+        "precision": "day",
+        "title": "Plan for Change: Removing Intune guided scenarios from the Intune admin center in March 2026",
+        "url": "https://mc.merill.net/message/MC1162945",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-05-01T00:00:00+00:00",
+        "precision": "month",
+        "title": "macOS Custom Compliance",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=ID%20553222",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-05-11T07:00:00+00:00",
+        "precision": "day",
+        "title": "Retirement of the Semi-Annual Enterprise Channel installation option for unmanaged devices",
+        "url": "https://mc.merill.net/message/MC1249428",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-06-01T00:00:00+00:00",
+        "precision": "month",
+        "title": "Intune Suite - Improved elevation detection",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=ID%20399933",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-06-01T07:00:00+00:00",
+        "precision": "day",
+        "title": "Microsoft Edge for Business: Cross-tenant support using Intune Mobile Application Management (MAM)",
+        "url": "https://mc.merill.net/message/MC1255405",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-06-06T07:00:00+00:00",
+        "precision": "day",
+        "title": "Plan for Change: Windows Autopatch is enabling hotpatch updates by default",
+        "url": "https://mc.merill.net/message/MC1248388",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-07-01T00:00:00+00:00",
+        "precision": "month",
+        "title": "Intune Suite - Unattended Remote Help for Windows - Remote Sign-in",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=ID%20499154",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-08-17T07:00:00+00:00",
+        "precision": "day",
+        "title": "Upcoming change: Microsoft 365 Apps SAEC and MEC will unify",
+        "url": "https://mc.merill.net/message/MC1274325",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-24T07:00:00+00:00",
+        "precision": "day",
+        "title": "Plan for Change: Update to Intune Data Warehouse infrastructure",
+        "url": "https://mc.merill.net/message/MC1188216",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-31T07:00:00+00:00",
+        "precision": "day",
+        "title": "Reminder: \"Require approved client app\" control in Microsoft Entra Conditional Access will be retired in June 2026",
+        "url": "https://mc.merill.net/message/MC1220751",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      }
+    ]
+  }
+]
