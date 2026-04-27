@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Intune Weekly - The forward-looking briefing for Microsoft Intune admins</title>
+<meta name="description" content="A weekly briefing for Microsoft Intune admins. What is landing in your tenant soon, what is on the horizon, what shipped, and what the community is hitting in the field.">
+<link rel="icon" href="data:,">
+<style>
+:root {
+    --bg: #faf8f5;
+    --ink: #1a1a1a;
+    --navy: #1a2744;
+    --gold: #d9c692;
+    --rule: #cfcac1;
+    --muted: #6b6760;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+body {
+    font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+.wrap { max-width: 880px; margin: 0 auto; padding: 32px 20px 80px 20px; }
+header { border-bottom: 2px solid var(--navy); padding-bottom: 16px; margin-bottom: 32px; }
+h1.brand {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 900;
+    font-size: 44px;
+    color: var(--navy);
+    margin: 0 0 4px 0;
+    letter-spacing: 0.5px;
+}
+.tagline { font-style: italic; color: var(--muted); margin: 0 0 12px 0; }
+.cta {
+    display: inline-block;
+    background: var(--navy);
+    color: var(--bg);
+    text-decoration: none;
+    padding: 10px 18px;
+    font-family: 'Source Sans 3', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.cta:hover { background: #0f1a30; }
+section { margin-bottom: 48px; }
+h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 24px;
+    color: var(--navy);
+    margin: 0 0 16px 0;
+    border-bottom: 0.5px solid var(--rule);
+    padding-bottom: 6px;
+}
+.about p { color: #333; margin: 0 0 12px 0; }
+.archive-list { list-style: none; padding: 0; margin: 0; }
+.archive-list li { padding: 16px 0; border-bottom: 0.5px solid var(--rule); }
+.archive-meta { font-family: 'Source Sans 3', 'Helvetica Neue', sans-serif; font-size: 12px;
+    text-transform: uppercase; letter-spacing: 1.2px; color: var(--muted); margin-bottom: 4px; }
+.archive-headline { font-size: 17px; color: var(--ink); margin-bottom: 6px; }
+.archive-links a { color: var(--navy); font-family: 'Source Sans 3', 'Helvetica Neue', sans-serif;
+    font-size: 13px; font-weight: 600; text-decoration: none; text-transform: uppercase;
+    letter-spacing: 0.8px; margin-right: 16px; border-bottom: 1px solid var(--navy); padding-bottom: 1px; }
+.archive-links a:hover { color: #0f1a30; }
+.empty { color: var(--muted); font-style: italic; text-align: center; padding: 24px 0; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 0.5px solid var(--rule);
+    color: var(--muted); font-size: 13px; font-family: 'Source Sans 3', 'Helvetica Neue', sans-serif; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+    <h1 class="brand">Intune Weekly</h1>
+    <p class="tagline">What is landing in your tenant soon, what is on the horizon, what shipped, and what the community is hitting in the field. Every Tuesday.</p>
+    <a class="cta" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048" target="_blank" rel="noopener">Subscribe on LinkedIn</a>
+</header>
+
+<section class="about">
+    <h2>About</h2>
+    <p>Most Intune newsletters look backwards: they summarise what already shipped. Intune Weekly leads with what is coming - Roadmap items moving to GA, Message Center actions with deadlines, and in-development features - so admins know what to plan around before it lands in their tenant. Real-world community signal from r/Intune and Tech Community sits alongside the official sources, because Microsoft does not publicly acknowledge every issue that admins hit.</p>
+</section>
+
+<section>
+    <h2>Archive</h2>
+    <ul class="archive-list" id="archive"><li class="empty">Loading editions.</li></ul>
+</section>
+
+<footer>
+    Intune Weekly is an independent newsletter. Sources are credited inline in each edition. The repository is public at
+    <a href="https://github.com/ugurkocde/IntuneWeekly" style="color: var(--muted);">github.com/ugurkocde/IntuneWeekly</a>.
+</footer>
+
+</div>
+
+<script>
+(async function () {
+    const archive = document.getElementById('archive');
+
+    function clear(el) { while (el.firstChild) el.removeChild(el.firstChild); }
+    function el(tag, attrs, text) {
+        const node = document.createElement(tag);
+        if (attrs) Object.keys(attrs).forEach(function (k) {
+            if (k === 'class') node.className = attrs[k];
+            else node.setAttribute(k, attrs[k]);
+        });
+        if (text != null) node.textContent = String(text);
+        return node;
+    }
+
+    let editions = [];
+    try {
+        const res = await fetch('editions.json', { cache: 'no-store' });
+        if (res.ok) editions = await res.json();
+    } catch (e) {
+        editions = [];
+    }
+    if (!Array.isArray(editions) || editions.length === 0) {
+        clear(archive);
+        archive.appendChild(el('li', { 'class': 'empty' }, 'The first edition publishes on Tuesday.'));
+        return;
+    }
+
+    clear(archive);
+    editions.forEach(function (e) {
+        const dateStr = e.date_range || e.date || '';
+        const headline = e.headline || ('Edition ' + (e.edition_no || ''));
+        const editionPrefix = e.edition_no ? ('No. ' + e.edition_no + ' - ') : '';
+
+        const li = el('li');
+        li.appendChild(el('div', { 'class': 'archive-meta' }, editionPrefix + dateStr));
+        li.appendChild(el('div', { 'class': 'archive-headline' }, headline));
+        const links = el('div', { 'class': 'archive-links' });
+        if (e.pdf_url) links.appendChild(el('a', { href: e.pdf_url }, 'Read PDF'));
+        if (e.linkedin_url) links.appendChild(el('a', { href: e.linkedin_url }, 'LinkedIn version'));
+        li.appendChild(links);
+        archive.appendChild(li);
+    });
+})();
+</script>
+
+</body>
+</html>
