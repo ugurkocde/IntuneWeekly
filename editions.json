@@ -1,5 +1,127 @@
 [
   {
+    "date": "2026-04-28",
+    "edition_no": 1,
+    "date_range": "April 21 - 27, 2026",
+    "headline": "Samsung Knox wipe-block locks devices permanently; Autopatch report shows zero devices for weeks.",
+    "pdf_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-04-28/intune-weekly.pdf",
+    "linkedin_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-04-28/linkedin-article.md",
+    "radar_items": [
+      {
+        "title": "Samsung Knox OEMConfig wipe-block bricks devices permanently",
+        "why": "Deploying a KSP profile that blocks device reset enforces at firmware level with no recovery path \u2014 do not push to production without a validated recovery procedure.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1svibhk/warning_with_fully_managed_samsung_devices_and/"
+      },
+      {
+        "title": "Autopatch 'Managed for quality updates' report showing zero devices",
+        "why": "The report has been broken for weeks across multiple tenants, silently undermining compliance reporting \u2014 raise a support case now if affected.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1sso3r4/is_the_autopatch_management_status_report_just/"
+      },
+      {
+        "title": "Hotpatch 24H2: ARM64 devices silently excluded without extra profile",
+        "why": "ARM64 devices are not receiving hotpatch updates unless a separate config profile is deployed \u2014 audit your fleet coverage before assuming full adoption.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1ss4gs9/opinions_of_hot_patch/"
+      },
+      {
+        "title": "AI-speed CVE exploitation raises the bar for patch currency",
+        "why": "Microsoft's customer success team warns that AI-assisted exploit discovery collapses the safe response window, making proactive Autopatch ring configuration a baseline requirement now.",
+        "source_label": "Blog - Customer Success",
+        "url": "https://techcommunity.microsoft.com/t5/intune-customer-success/as-vulnerability-discovery-moves-at-ai-speed-keeping-current-is/ba-p/4513766"
+      },
+      {
+        "title": "Platform SSO on macOS requires ADE \u2014 Company Portal enrollment is not enough",
+        "why": "Admins planning Entra ID lock-screen login for existing MacBooks must account for a required wipe via ADE; user-driven enrollment will not suffice.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1sruk61/enroll_existing_macs_into_intune_enable_entra_id/"
+      }
+    ],
+    "timeline_items": [
+      {
+        "date": "2026-04-30",
+        "precision": "day",
+        "title": "Plan for Change: Removing Intune guided scenarios from the Intune admin center in March 2026",
+        "url": "https://mc.merill.net/message/MC1162945",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-05-01",
+        "precision": "month",
+        "title": "macOS Custom Compliance",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=ID%20553222",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-05-11",
+        "precision": "day",
+        "title": "Retirement of the Semi-Annual Enterprise Channel installation option for unmanaged devices",
+        "url": "https://mc.merill.net/message/MC1249428",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-06-01",
+        "precision": "month",
+        "title": "Intune Suite - Improved elevation detection",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=ID%20399933",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-06-01",
+        "precision": "day",
+        "title": "Microsoft Edge for Business: Cross-tenant support using Intune Mobile Application Management (MAM)",
+        "url": "https://mc.merill.net/message/MC1255405",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-06-06",
+        "precision": "day",
+        "title": "Plan for Change: Windows Autopatch is enabling hotpatch updates by default",
+        "url": "https://mc.merill.net/message/MC1248388",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-07-01",
+        "precision": "month",
+        "title": "Intune Suite - Unattended Remote Help for Windows - Remote Sign-in",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=ID%20499154",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-08-17",
+        "precision": "day",
+        "title": "Upcoming change: Microsoft 365 Apps SAEC and MEC will unify",
+        "url": "https://mc.merill.net/message/MC1274325",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-24",
+        "precision": "day",
+        "title": "Plan for Change: Update to Intune Data Warehouse infrastructure",
+        "url": "https://mc.merill.net/message/MC1188216",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-31",
+        "precision": "day",
+        "title": "Reminder: \"Require approved client app\" control in Microsoft Entra Conditional Access will be retired in June 2026",
+        "url": "https://mc.merill.net/message/MC1220751",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      }
+    ]
+  },
+  {
     "date": "2026-04-27",
     "edition_no": 1,
     "date_range": "April 20 - 26, 2026",
