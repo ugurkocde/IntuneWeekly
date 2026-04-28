@@ -20,104 +20,114 @@
         "url": "https://www.reddit.com/r/Intune/comments/1sso3r4/is_the_autopatch_management_status_report_just/"
       },
       {
-        "title": "Hotpatch 24H2: ARM64 devices silently excluded without extra profile",
-        "why": "ARM64 devices are not receiving hotpatch updates unless a separate config profile is deployed \u2014 audit your fleet coverage before assuming full adoption.",
-        "source_label": "Reddit",
-        "url": "https://www.reddit.com/r/Intune/comments/1ss4gs9/opinions_of_hot_patch/"
+        "title": "Microsoft Defender now assesses Secure Boot 2023 certificate readiness fleet-wide",
+        "why": "New Defender capability auto-categorizes devices as exposed, compliant, or not applicable with remediation guidance attached \u2014 useful directly against the 'Under observation' pain admins are reporting.",
+        "source_label": "Microsoft - Release Health",
+        "url": "https://aka.ms/secureboot-mde"
       },
       {
         "title": "AI-speed CVE exploitation raises the bar for patch currency",
         "why": "Microsoft's customer success team warns that AI-assisted exploit discovery collapses the safe response window, making proactive Autopatch ring configuration a baseline requirement now.",
         "source_label": "Blog - Customer Success",
         "url": "https://techcommunity.microsoft.com/t5/intune-customer-success/as-vulnerability-discovery-moves-at-ai-speed-keeping-current-is/ba-p/4513766"
-      },
-      {
-        "title": "Platform SSO on macOS requires ADE \u2014 Company Portal enrollment is not enough",
-        "why": "Admins planning Entra ID lock-screen login for existing MacBooks must account for a required wipe via ADE; user-driven enrollment will not suffice.",
-        "source_label": "Reddit",
-        "url": "https://www.reddit.com/r/Intune/comments/1sruk61/enroll_existing_macs_into_intune_enable_entra_id/"
       }
     ],
     "timeline_items": [
       {
-        "date": "2026-04-30",
-        "precision": "day",
+        "date": "2026-04-30T08:00:00+00:00",
         "title": "Plan for Change: Removing Intune guided scenarios from the Intune admin center in March 2026",
+        "label": "Plan for Change",
         "url": "https://mc.merill.net/message/MC1162945",
-        "label": "Plan for Change",
-        "source": "Message Center"
+        "source": "Message Center",
+        "ref_id": "MC1162945"
       },
       {
-        "date": "2026-05-01",
-        "precision": "month",
+        "date": "2026-05-01T00:00:00+00:00",
+        "title": "[Entra] Microsoft Entra: Conditional Access support for Entra ID Account Recovery",
+        "label": "In development",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=529855",
+        "source": "Roadmap",
+        "ref_id": "529855"
+      },
+      {
+        "date": "2026-05-01T00:00:00+00:00",
         "title": "macOS Custom Compliance",
-        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=ID%20553222",
         "label": "In development",
-        "source": "Roadmap"
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=553222",
+        "source": "Roadmap",
+        "ref_id": "553222"
       },
       {
-        "date": "2026-05-11",
-        "precision": "day",
+        "date": "2026-05-11T07:00:00+00:00",
         "title": "Retirement of the Semi-Annual Enterprise Channel installation option for unmanaged devices",
+        "label": "Breaking Change",
         "url": "https://mc.merill.net/message/MC1249428",
-        "label": "Breaking Change",
-        "source": "Message Center"
+        "source": "Message Center",
+        "ref_id": "MC1249428"
       },
       {
-        "date": "2026-06-01",
-        "precision": "month",
+        "date": "2026-06-01T00:00:00+00:00",
         "title": "Intune Suite - Improved elevation detection",
-        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=ID%20399933",
         "label": "In development",
-        "source": "Roadmap"
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=399933",
+        "source": "Roadmap",
+        "ref_id": "399933"
       },
       {
-        "date": "2026-06-01",
-        "precision": "day",
+        "date": "2026-06-01T07:00:00+00:00",
         "title": "Microsoft Edge for Business: Cross-tenant support using Intune Mobile Application Management (MAM)",
+        "label": "Breaking Change",
         "url": "https://mc.merill.net/message/MC1255405",
-        "label": "Breaking Change",
-        "source": "Message Center"
+        "source": "Message Center",
+        "ref_id": "MC1255405"
       },
       {
-        "date": "2026-06-06",
-        "precision": "day",
+        "date": "2026-06-06T07:00:00+00:00",
         "title": "Plan for Change: Windows Autopatch is enabling hotpatch updates by default",
+        "label": "Plan for Change",
         "url": "https://mc.merill.net/message/MC1248388",
-        "label": "Plan for Change",
-        "source": "Message Center"
+        "source": "Message Center",
+        "ref_id": "MC1248388"
       },
       {
-        "date": "2026-07-01",
-        "precision": "month",
+        "date": "2026-07-01T00:00:00+00:00",
         "title": "Intune Suite - Unattended Remote Help for Windows - Remote Sign-in",
-        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=ID%20499154",
         "label": "In development",
-        "source": "Roadmap"
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=499154",
+        "source": "Roadmap",
+        "ref_id": "499154"
       },
       {
-        "date": "2026-08-17",
-        "precision": "day",
+        "date": "2026-07-01T00:00:00+00:00",
+        "title": "[Entra] Microsoft Entra: Microsoft Security Copilot App Lifecycle Management Agent in Microsoft Entra",
+        "label": "In development",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=536578",
+        "source": "Roadmap",
+        "ref_id": "536578"
+      },
+      {
+        "date": "2026-08-17T07:00:00+00:00",
         "title": "Upcoming change: Microsoft 365 Apps SAEC and MEC will unify",
-        "url": "https://mc.merill.net/message/MC1274325",
         "label": "Breaking Change",
-        "source": "Message Center"
+        "url": "https://mc.merill.net/message/MC1274325",
+        "source": "Message Center",
+        "ref_id": "MC1274325"
       },
       {
-        "date": "2026-08-24",
-        "precision": "day",
+        "date": "2026-08-24T07:00:00+00:00",
         "title": "Plan for Change: Update to Intune Data Warehouse infrastructure",
-        "url": "https://mc.merill.net/message/MC1188216",
         "label": "Plan for Change",
-        "source": "Message Center"
+        "url": "https://mc.merill.net/message/MC1188216",
+        "source": "Message Center",
+        "ref_id": "MC1188216"
       },
       {
-        "date": "2026-08-31",
-        "precision": "day",
+        "date": "2026-08-31T07:00:00+00:00",
         "title": "Reminder: \"Require approved client app\" control in Microsoft Entra Conditional Access will be retired in June 2026",
-        "url": "https://mc.merill.net/message/MC1220751",
         "label": "Plan for Change",
-        "source": "Message Center"
+        "url": "https://mc.merill.net/message/MC1220751",
+        "source": "Message Center",
+        "ref_id": "MC1220751"
       }
     ]
   },
