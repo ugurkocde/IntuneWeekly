@@ -2,6 +2,8 @@
 
 The forward-looking briefing for Microsoft Intune admins. Every Tuesday.
 
+<img width="613" height="187" alt="image" src="https://github.com/user-attachments/assets/d5016197-0fb3-4075-9b08-4460a381bd1d" />
+
 This repository is the public archive. It holds the weekly PDF, a LinkedIn-formatted Markdown version, and a static landing page hosted via GitHub Pages.
 
 - **Latest edition and archive:** [ugurkocde.github.io/IntuneWeekly](https://ugurkocde.github.io/IntuneWeekly/)
