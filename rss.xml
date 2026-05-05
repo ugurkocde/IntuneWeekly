@@ -1,18 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Intune Weekly</title>
     <link>https://ugurkocde.github.io/IntuneWeekly/</link>
     <atom:link href="https://ugurkocde.github.io/IntuneWeekly/rss.xml" rel="self" type="application/rss+xml" />
     <description>A weekly briefing for Microsoft Intune admins. What is landing in your tenant soon, what is on the horizon, what shipped, and what the community is hitting in the field.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 05 May 2026 16:31:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 16:52:54 +0000</lastBuildDate>
     <item>
       <title>Edition 2 - April 28 - May 4, 2026</title>
       <link>https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-05/</link>
       <guid isPermaLink="true">https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-05/</guid>
       <pubDate>Tue, 05 May 2026 12:00:00 +0000</pubDate>
       <description><![CDATA[Hotpatch on by default, Secure Boot deadline looms, and Autopilot stalls hit production.]]></description>
+      <content:encoded><![CDATA[<p>Hotpatch on by default, Secure Boot deadline looms, and Autopilot stalls hit production.</p>
+<p><strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-05/intune-weekly.pdf">Download the full PDF →</a></strong></p>
+<p><strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">Subscribe on LinkedIn →</a></strong> to get the next edition every Tuesday</p>
+<hr />
+<h2>Community shoutout</h2>
+<p><strong><a href="https://www.linkedin.com/in/lewis-barry/">Lewis Barry</a></strong> - <em>Intune Settings Catalog Viewer</em>
+Built intunesettings.app, a faster way to browse the Intune Settings Catalog with a dedicated page that tracks changes Microsoft makes to the catalog over time. Cuts the friction of digging through the admin center and surfaces silent additions or removals that would otherwise go unnoticed. <a href="https://intunesettings.app/">Read more</a></p>
+<h2>On the radar this week</h2>
+<ul>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1syunmi/secureboot_certificate_updates_realitycheck/">Secure Boot Certs Expire June 2026 - Remediate Now</a></strong> <em>(Reddit)</em> - Unremediated devices will silently stop receiving boot manager updates and may trigger BitLocker recovery prompts - the June deadline leaves little runway for large inventories.</li>
+<li><strong><a href="https://techcommunity.microsoft.com/blog/Windows-ITPro-blog/securing-devices-faster-with-hotpatch-updates-on-by-default/4500066/replies/4516455">Hotpatch Flipped On Tenant-Wide - May Is First Affected Month</a></strong> <em>(Microsoft - Message Center)</em> - Microsoft silently enabled Hotpatch for all tenants in April, meaning newly enrolled devices will receive hotpatch instead of a full CU starting in May - admins must configure exclusion groups now for any devices that should not receive hotpatches.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1t3saxx/autopilot_pre_provisioning_stuck_at_app_installs/">Autopilot Pre-Provisioning Stalling at App Install Phase</a></strong> <em>(Reddit)</em> - Multiple admins are hitting this in production today with no config changes on their end, and the only unblock requires a force-reboot - active issue to watch before scheduling any provisioning runs this week.</li>
+<li><strong><a href="https://techcommunity.microsoft.com/t5/microsoft-intune/policy-applied-allthough-it-shouldn-t/m-p/4516937#M23417">Conditional Access Filter Now Hitting Windows Server RDP Sessions</a></strong> <em>(Blog - Discussions)</em> - A backend CA evaluation change is causing policies that should exclude company-owned devices to incorrectly apply to Windows Server 2025 RDP sessions, forcing unexpected 8-hour reauthentication - admins with device-filter CA policies should audit scope immediately.</li>
+<li><strong><a href="https://support.microsoft.com/help/5083631">April 2026 Non-Security Preview: Dynamic App Removal + Secure Boot Side-Effect</a></strong> <em>(Microsoft - Release Health)</em> - This update delivers the new dynamic MSIX/APPX removal capability but also carries the KB5082052 Secure Boot cert prompt side-effect - admins should read the known issue before pushing to pilot rings.</li>
+</ul>
+<hr />
+<h2>In this edition</h2>
+<p><strong>Landing in your tenant soon</strong>
+- <a href="https://techcommunity.microsoft.com/blog/Windows-ITPro-blog/securing-devices-faster-with-hotpatch-updates-on-by-default/4500066/replies/4516455">Hotpatch Enabled Tenant-Wide by Default - May Updates Are First Affected</a>
+- <a href="https://support.microsoft.com/help/5083631">April 2026 Windows Non-Security Preview Update Now Available</a></p>
+<p><strong>On the horizon</strong>
+- <a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/dynamically-remove-apps-from-managed-windows-11-devices/ba-p/4516291">Dynamic App Removal for Managed Windows 11 Devices</a>
+- <a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-365-for-agents-now-in-public-preview-run-ai-agents/ba-p/4513479">Windows 365 for Agents Now in Public Preview</a>
+- <a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/public-preview-user-initiated-provisioning-for-windows-365/ba-p/4512474">User-Initiated Provisioning for Windows 365 Reserve Now in Public Preview</a></p>
+<p><strong>Action required</strong>
+- <a href="https://www.reddit.com/r/Intune/comments/1syunmi/secureboot_certificate_updates_realitycheck/">Secure Boot Certificates Expire June 2026 - Intune-Managed Device Remediation Underway</a></p>
+<p><strong>What shipped</strong>
+- <a href="https://techcommunity.microsoft.com/t5/microsoft-intune-blog/what-s-new-in-microsoft-intune-april/ba-p/4493135">April 2026 Intune Service Update - Higher-Frequency App Inventory, Linux SSO, Apple Enrollment Expansion</a>
+- <a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/protect-your-estate-reassess-your-windows-update-policies/ba-p/4515228">New Windows Autopatch Overview Report Now Available for All Tenants</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Multiple Features Drop Off In-Development List - Likely Shipped in April Service Update</a>
+- <a href="https://techcommunity.microsoft.com/t5/intune-customer-success/speed-where-it-matters-how-microsoft-intune-helps-it-prioritize/ba-p/4515942">Microsoft Confirms Intune Policy Sync Is Far Faster Than the "8-Hour" Myth</a>
+- <a href="https://techcommunity.microsoft.com/t5/intune-customer-success/migrating-frontline-mobile-devices-aligning-stakeholders-before/ba-p/4516511">Frontline Device Migration Guidance: Stakeholder Alignment Before Testing</a></p>
+<p><strong>From the field</strong>
+- <a href="https://techcommunity.microsoft.com/t5/microsoft-intune/policy-applied-allthough-it-shouldn-t/m-p/4516937#M23417">Conditional Access Filter Behavior Changing - Server Devices Now Getting Sign-In Policies They Shouldn't</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1t3saxx/autopilot_pre_provisioning_stuck_at_app_installs/">Autopilot Pre-Provisioning Intermittently Stalling at App Install Phase</a>
+- <a href="https://techcommunity.microsoft.com/t5/microsoft-intune/app-enforced-restrictions-not-working-on-chrome/m-p/4516309#M23409">App Enforced Restrictions Not Enforcing on Chrome for BYOD macOS</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1t2f8mq/autopilot_profile_assignment_issues_after_moving/">Autopilot Profile Assignment Breaks When Moving from "All Devices" to Dynamic Group</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1szupgk/hybrid_join_and_intune_double_entity_problem/">Hybrid Join Producing Double Entra Entries After Device Reset</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1t4asyd/does_anyone_have_a_system_using_winget_to_install/">WinGet App Deployment via Intune Consistently Failing for Many Admins</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1t0eins/pim_multirole_activation/">Community Tool: PIM Multi-Role Activation GUI for Intune Admins</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1t0cqyx/interest_in_dashboard_for_intune/">Community Tool: Central Intune Reporting Dashboard in Development - Feature Requests Wanted</a>
+- <a href="https://www.reddit.com/r/sysadmin/comments/1t0157x/hp_laptop_pricing_is_so_out_of_control_management/">Organisations Eyeing Mac Fleets as HP Laptop Prices Double - Intune Mac Management Considerations</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1t13jim/is_there_a_way_to_connect_existing_domain_join/">Domain-to-Entra Migration Without Reformat - Community Shares Scalable Approaches</a></p>
+<hr />
+<p>For the full story on every item, <strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-05/intune-weekly.pdf">download the PDF</a></strong>. The PDF includes the radar, the upcoming-changes timeline, and the full body of each section.</p>
+<p>Never miss an edition - <strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">subscribe to Intune Weekly on LinkedIn</a></strong>.</p>]]></content:encoded>
     </item>
     <item>
       <title>Edition 1 - April 21 - 27, 2026</title>
@@ -20,6 +66,50 @@
       <guid isPermaLink="true">https://ugurkocde.github.io/IntuneWeekly/editions/2026-04-28/</guid>
       <pubDate>Tue, 28 Apr 2026 12:00:00 +0000</pubDate>
       <description><![CDATA[Samsung Knox wipe-block locks devices permanently; Autopatch report shows zero devices for weeks.]]></description>
+      <content:encoded><![CDATA[<p>Samsung Knox wipe-block locks devices permanently; Autopatch report shows zero devices for weeks.</p>
+<p><strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-04-28/intune-weekly.pdf">Download the full PDF →</a></strong></p>
+<p><strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">Subscribe on LinkedIn →</a></strong> to get the next edition every Tuesday</p>
+<hr />
+<h2>Community shoutout</h2>
+<p><strong><a href="https://www.linkedin.com/in/janic-verboon-04b11b114/">Janic Verboon</a></strong> - <em>EAM-AutoUpdater</em>
+Built EAM-AutoUpdater, a free PowerShell automation that watches the Intune Enterprise App Catalog for new app versions, deploys them, and migrates assignments, scope tags, and Enrollment Status Page references from the previous version. Turns a recurring manual chore into an Azure Automation runbook. <a href="https://github.com/JanicVerboon/EAM-AutoUpdater">Read more</a></p>
+<h2>On the radar this week</h2>
+<ul>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1svibhk/warning_with_fully_managed_samsung_devices_and/">Samsung Knox OEMConfig wipe-block bricks devices permanently</a></strong> <em>(Reddit)</em> - Deploying a KSP profile that blocks device reset enforces at firmware level with no recovery path - do not push to production without a validated recovery procedure.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1sso3r4/is_the_autopatch_management_status_report_just/">Autopatch 'Managed for quality updates' report showing zero devices</a></strong> <em>(Reddit)</em> - The report has been broken for weeks across multiple tenants, silently undermining compliance reporting - raise a support case now if affected.</li>
+<li><strong><a href="https://aka.ms/secureboot-mde">Microsoft Defender now assesses Secure Boot 2023 certificate readiness fleet-wide</a></strong> <em>(Microsoft - Release Health)</em> - New Defender capability auto-categorizes devices as exposed, compliant, or not applicable with remediation guidance attached - useful directly against the 'Under observation' pain admins are reporting.</li>
+<li><strong><a href="https://techcommunity.microsoft.com/t5/intune-customer-success/as-vulnerability-discovery-moves-at-ai-speed-keeping-current-is/ba-p/4513766">AI-speed CVE exploitation raises the bar for patch currency</a></strong> <em>(Blog - Customer Success)</em> - Microsoft's customer success team warns that AI-assisted exploit discovery collapses the safe response window, making proactive Autopatch ring configuration a baseline requirement now.</li>
+</ul>
+<hr />
+<h2>In this edition</h2>
+<p><strong>Landing in your tenant soon</strong>
+- <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-windowsai?source=docs#removemicrosoftcopilotapp">New IT admin policy: Remove Microsoft Copilot app</a></p>
+<p><strong>On the horizon</strong>
+- <a href="https://techcommunity.microsoft.com/t5/intune-customer-success/as-vulnerability-discovery-moves-at-ai-speed-keeping-current-is/ba-p/4513766">Keeping current is the new patching strategy as AI accelerates vulnerability discovery</a>
+- <a href="https://techcommunity.microsoft.com/t5/microsoft-intune/autopilot-v1-vs-device-preparation-v2-great-direction-but-is-it/m-p/4514362#M23381">Autopilot Device Preparation (v2) enterprise readiness still in question for large-scale deployments</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1stzhf9/epm_for_network_adapter_change/">EPM network adapter elevation support reportedly in development</a>
+- <a href="https://techcommunity.microsoft.com/t5/intune-customer-success/unpacking-endpoint-management-is-back-and-we-ve-got-a-lot-to/ba-p/4514599">"Unpacking Endpoint Management" series returns with engineering and product team involvement</a>
+- <a href="https://aka.ms/AMA/SecureBoot">Ask Microsoft Anything: Secure Boot certificate updates (April 23 and May 18)</a></p>
+<p><strong>Action required</strong>
+- <a href="https://www.reddit.com/r/sysadmin/comments/1sucuh6/half_our_company_is_local_admin_security_team/">Samsung Knox OEMConfig wipe-block policy renders devices unrecoverable - test before broad deployment</a></p>
+<p><strong>What shipped</strong>
+- <a href="https://aka.ms/secureboot-mde">Microsoft Defender now provides centralized Secure Boot 2023 certificate readiness assessment</a></p>
+<p><strong>From the field</strong>
+- <a href="https://www.reddit.com/r/sysadmin/comments/1sucuh6/half_our_company_is_local_admin_security_team/">Local admin removal project: EPM audit-first approach and change management are the consensus best practice</a>
+- <a href="https://www.reddit.com/r/sysadmin/comments/1srp86f/im_incredibly_confused_by_microsofts_remediation/">Secure Boot certificate update: "Under observation" status and UEFICA2023Status "Not started" on majority of fleet</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1sso3r4/is_the_autopatch_management_status_report_just/">Autopatch "Managed for quality updates" report showing zero devices for weeks</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1st15h8/windows_updates_during_oobe_autopilot/">Windows Updates not applying at Device ESP phase during Autopilot pre-provisioning</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1ss4gs9/opinions_of_hot_patch/">Hotpatch on 24H2: ARM64 devices silently excluded without an additional config profile</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1ssgr95/something_went_wrong_viewing_device_list_anyone/">Intune device list throwing "Unable to fetch any device" errors - transient but recurring</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1su9fdn/i_built_an_open_source_visual_map_for_microsoft/">EntraMap: open-source visual relationship mapper for users, groups, apps, and Conditional Access</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1srypqx/logic_app_to_monitor_expiring_apple_certificates/">Logic App for proactive Apple certificate and token expiry alerting in Intune</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1sruk61/enroll_existing_macs_into_intune_enable_entra_id/">Platform SSO on macOS requires ADE/ABM enrollment - user-driven Company Portal enrollment is not sufficient</a>
+- <a href="https://www.reddit.com/r/microsoft365/comments/1svggs3/anyone_else_frustrated_that_corporate_contacts/">GAL contacts not surfacing in iOS native dialer - no clean Intune-native solution exists</a>
+- <a href="https://techcommunity.microsoft.com/t5/microsoft-intune/autopatch-microsoft-365-apps-update-rings/m-p/4513986#M23376">Autopatch UpdateDeferredVersions registry value behaviour under active investigation by community</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1ssnbb2/i_want_to_install_an_intune_app_only_during/">Autopilot-only app deployment: defaultuser0 requirements script is the cleanest gate</a></p>
+<hr />
+<p>For the full story on every item, <strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-04-28/intune-weekly.pdf">download the PDF</a></strong>. The PDF includes the radar, the upcoming-changes timeline, and the full body of each section.</p>
+<p>Never miss an edition - <strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">subscribe to Intune Weekly on LinkedIn</a></strong>.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
