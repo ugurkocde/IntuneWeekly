@@ -9,6 +9,11 @@ Hotpatch on by default, Secure Boot deadline looms, and Autopilot stalls hit pro
 
 ---
 
+## Community shoutout
+
+**[Lewis Barry](https://www.linkedin.com/in/lewis-barry/)** - _Intune Settings Catalog Viewer_
+Built intunesettings.app, a faster way to browse the Intune Settings Catalog with a dedicated page that tracks changes Microsoft makes to the catalog over time. Cuts the friction of digging through the admin center and surfaces silent additions or removals that would otherwise go unnoticed. [Read more](https://intunesettings.app/)
+
 ## On the radar this week
 
 - **[Secure Boot Certs Expire June 2026 - Remediate Now](https://www.reddit.com/r/Intune/comments/1syunmi/secureboot_certificate_updates_realitycheck/)** _(Reddit)_ - Unremediated devices will silently stop receiving boot manager updates and may trigger BitLocker recovery prompts - the June deadline leaves little runway for large inventories.
