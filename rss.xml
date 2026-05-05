@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intune Weekly</title>
+    <link>https://ugurkocde.github.io/IntuneWeekly/</link>
+    <atom:link href="https://ugurkocde.github.io/IntuneWeekly/rss.xml" rel="self" type="application/rss+xml" />
+    <description>A weekly briefing for Microsoft Intune admins. What is landing in your tenant soon, what is on the horizon, what shipped, and what the community is hitting in the field.</description>
+    <language>en</language>
+    <lastBuildDate>Tue, 05 May 2026 16:31:00 +0000</lastBuildDate>
+    <item>
+      <title>Edition 2 - April 28 - May 4, 2026</title>
+      <link>https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-05/</link>
+      <guid isPermaLink="true">https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-05/</guid>
+      <pubDate>Tue, 05 May 2026 12:00:00 +0000</pubDate>
+      <description><![CDATA[Hotpatch on by default, Secure Boot deadline looms, and Autopilot stalls hit production.]]></description>
+    </item>
+    <item>
+      <title>Edition 1 - April 21 - 27, 2026</title>
+      <link>https://ugurkocde.github.io/IntuneWeekly/editions/2026-04-28/</link>
+      <guid isPermaLink="true">https://ugurkocde.github.io/IntuneWeekly/editions/2026-04-28/</guid>
+      <pubDate>Tue, 28 Apr 2026 12:00:00 +0000</pubDate>
+      <description><![CDATA[Samsung Knox wipe-block locks devices permanently; Autopatch report shows zero devices for weeks.]]></description>
+    </item>
+  </channel>
+</rss>

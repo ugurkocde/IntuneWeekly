@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intune Weekly - Edition 2 - April 28 - May 4, 2026</title>
+<meta name="description" content="Hotpatch on by default, Secure Boot deadline looms, and Autopilot stalls hit production.">
+<link rel="alternate" type="application/rss+xml" title="Intune Weekly" href="https://ugurkocde.github.io/IntuneWeekly/rss.xml">
+<link rel="icon" href="data:,">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<meta property="og:title" content="Intune Weekly - Edition 2 - April 28 - May 4, 2026">
+<meta property="og:description" content="Hotpatch on by default, Secure Boot deadline looms, and Autopilot stalls hit production.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-05/">
+<style>
+:root {
+  --bg: #faf8f5;
+  --ink: #1a1a1a;
+  --navy: #1a2744;
+  --gold: #d9c692;
+  --rule: #cfcac1;
+  --muted: #6b6760;
+  --link: #1a2744;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+body {
+  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+  line-height: 1.65;
+  font-size: 16px;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+header.masthead { border-bottom: 2px solid var(--navy); padding-bottom: 14px; margin-bottom: 28px; }
+header.masthead h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: -0.5px;
+  color: var(--navy);
+}
+header.masthead .meta {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+.ctas { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0 32px; }
+.ctas a {
+  display: inline-block;
+  padding: 11px 18px;
+  background: var(--navy);
+  color: var(--bg);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+}
+.ctas a.secondary { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
+article h1 { display: none; }
+article h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 26px;
+  margin: 36px 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+  color: var(--navy);
+  font-weight: 700;
+}
+article h3 { font-size: 18px; margin: 22px 0 8px; font-weight: 700; }
+article a { color: var(--link); }
+article p { margin: 12px 0; }
+article ul { padding-left: 22px; }
+article li { margin-bottom: 8px; }
+article hr { border: none; border-top: 1px solid var(--rule); margin: 36px 0; }
+article strong { color: var(--navy); }
+article em { color: var(--muted); }
+footer.foot {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+footer.foot a { color: var(--muted); }
+@media (max-width: 480px) {
+  header.masthead h1 { font-size: 32px; }
+  article h2 { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="masthead">
+  <h1>Intune Weekly</h1>
+  <div class="meta">Edition 2 &middot; April 28 - May 4, 2026</div>
+</header>
+<div class="ctas">
+  <a href="intune-weekly.pdf">Download PDF</a>
+  <a class="secondary" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">Follow on LinkedIn</a>
+</div>
+<article>
+<p>Hotpatch on by default, Secure Boot deadline looms, and Autopilot stalls hit production.</p>
+<p><strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-05/intune-weekly.pdf">Download the full PDF →</a></strong></p>
+<p><strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">Subscribe on LinkedIn →</a></strong> to get the next edition every Tuesday</p>
+<hr />
+<h2>Community shoutout</h2>
+<p><strong><a href="https://www.linkedin.com/in/lewis-barry/">Lewis Barry</a></strong> - <em>Intune Settings Catalog Viewer</em>
+Built intunesettings.app, a faster way to browse the Intune Settings Catalog with a dedicated page that tracks changes Microsoft makes to the catalog over time. Cuts the friction of digging through the admin center and surfaces silent additions or removals that would otherwise go unnoticed. <a href="https://intunesettings.app/">Read more</a></p>
+<h2>On the radar this week</h2>
+<ul>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1syunmi/secureboot_certificate_updates_realitycheck/">Secure Boot Certs Expire June 2026 - Remediate Now</a></strong> <em>(Reddit)</em> - Unremediated devices will silently stop receiving boot manager updates and may trigger BitLocker recovery prompts - the June deadline leaves little runway for large inventories.</li>
+<li><strong><a href="https://techcommunity.microsoft.com/blog/Windows-ITPro-blog/securing-devices-faster-with-hotpatch-updates-on-by-default/4500066/replies/4516455">Hotpatch Flipped On Tenant-Wide - May Is First Affected Month</a></strong> <em>(Microsoft - Message Center)</em> - Microsoft silently enabled Hotpatch for all tenants in April, meaning newly enrolled devices will receive hotpatch instead of a full CU starting in May - admins must configure exclusion groups now for any devices that should not receive hotpatches.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1t3saxx/autopilot_pre_provisioning_stuck_at_app_installs/">Autopilot Pre-Provisioning Stalling at App Install Phase</a></strong> <em>(Reddit)</em> - Multiple admins are hitting this in production today with no config changes on their end, and the only unblock requires a force-reboot - active issue to watch before scheduling any provisioning runs this week.</li>
+<li><strong><a href="https://techcommunity.microsoft.com/t5/microsoft-intune/policy-applied-allthough-it-shouldn-t/m-p/4516937#M23417">Conditional Access Filter Now Hitting Windows Server RDP Sessions</a></strong> <em>(Blog - Discussions)</em> - A backend CA evaluation change is causing policies that should exclude company-owned devices to incorrectly apply to Windows Server 2025 RDP sessions, forcing unexpected 8-hour reauthentication - admins with device-filter CA policies should audit scope immediately.</li>
+<li><strong><a href="https://support.microsoft.com/help/5083631">April 2026 Non-Security Preview: Dynamic App Removal + Secure Boot Side-Effect</a></strong> <em>(Microsoft - Release Health)</em> - This update delivers the new dynamic MSIX/APPX removal capability but also carries the KB5082052 Secure Boot cert prompt side-effect - admins should read the known issue before pushing to pilot rings.</li>
+</ul>
+<hr />
+<h2>In this edition</h2>
+<p><strong>Landing in your tenant soon</strong>
+- <a href="https://techcommunity.microsoft.com/blog/Windows-ITPro-blog/securing-devices-faster-with-hotpatch-updates-on-by-default/4500066/replies/4516455">Hotpatch Enabled Tenant-Wide by Default - May Updates Are First Affected</a>
+- <a href="https://support.microsoft.com/help/5083631">April 2026 Windows Non-Security Preview Update Now Available</a></p>
+<p><strong>On the horizon</strong>
+- <a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/dynamically-remove-apps-from-managed-windows-11-devices/ba-p/4516291">Dynamic App Removal for Managed Windows 11 Devices</a>
+- <a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-365-for-agents-now-in-public-preview-run-ai-agents/ba-p/4513479">Windows 365 for Agents Now in Public Preview</a>
+- <a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/public-preview-user-initiated-provisioning-for-windows-365/ba-p/4512474">User-Initiated Provisioning for Windows 365 Reserve Now in Public Preview</a></p>
+<p><strong>Action required</strong>
+- <a href="https://www.reddit.com/r/Intune/comments/1syunmi/secureboot_certificate_updates_realitycheck/">Secure Boot Certificates Expire June 2026 - Intune-Managed Device Remediation Underway</a></p>
+<p><strong>What shipped</strong>
+- <a href="https://techcommunity.microsoft.com/t5/microsoft-intune-blog/what-s-new-in-microsoft-intune-april/ba-p/4493135">April 2026 Intune Service Update - Higher-Frequency App Inventory, Linux SSO, Apple Enrollment Expansion</a>
+- <a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/protect-your-estate-reassess-your-windows-update-policies/ba-p/4515228">New Windows Autopatch Overview Report Now Available for All Tenants</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Multiple Features Drop Off In-Development List - Likely Shipped in April Service Update</a>
+- <a href="https://techcommunity.microsoft.com/t5/intune-customer-success/speed-where-it-matters-how-microsoft-intune-helps-it-prioritize/ba-p/4515942">Microsoft Confirms Intune Policy Sync Is Far Faster Than the "8-Hour" Myth</a>
+- <a href="https://techcommunity.microsoft.com/t5/intune-customer-success/migrating-frontline-mobile-devices-aligning-stakeholders-before/ba-p/4516511">Frontline Device Migration Guidance: Stakeholder Alignment Before Testing</a></p>
+<p><strong>From the field</strong>
+- <a href="https://techcommunity.microsoft.com/t5/microsoft-intune/policy-applied-allthough-it-shouldn-t/m-p/4516937#M23417">Conditional Access Filter Behavior Changing - Server Devices Now Getting Sign-In Policies They Shouldn't</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1t3saxx/autopilot_pre_provisioning_stuck_at_app_installs/">Autopilot Pre-Provisioning Intermittently Stalling at App Install Phase</a>
+- <a href="https://techcommunity.microsoft.com/t5/microsoft-intune/app-enforced-restrictions-not-working-on-chrome/m-p/4516309#M23409">App Enforced Restrictions Not Enforcing on Chrome for BYOD macOS</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1t2f8mq/autopilot_profile_assignment_issues_after_moving/">Autopilot Profile Assignment Breaks When Moving from "All Devices" to Dynamic Group</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1szupgk/hybrid_join_and_intune_double_entity_problem/">Hybrid Join Producing Double Entra Entries After Device Reset</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1t4asyd/does_anyone_have_a_system_using_winget_to_install/">WinGet App Deployment via Intune Consistently Failing for Many Admins</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1t0eins/pim_multirole_activation/">Community Tool: PIM Multi-Role Activation GUI for Intune Admins</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1t0cqyx/interest_in_dashboard_for_intune/">Community Tool: Central Intune Reporting Dashboard in Development - Feature Requests Wanted</a>
+- <a href="https://www.reddit.com/r/sysadmin/comments/1t0157x/hp_laptop_pricing_is_so_out_of_control_management/">Organisations Eyeing Mac Fleets as HP Laptop Prices Double - Intune Mac Management Considerations</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1t13jim/is_there_a_way_to_connect_existing_domain_join/">Domain-to-Entra Migration Without Reformat - Community Shares Scalable Approaches</a></p>
+<hr />
+<p>For the full story on every item, <strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-05/intune-weekly.pdf">download the PDF</a></strong>. The PDF includes the radar, the upcoming-changes timeline, and the full body of each section.</p>
+<p>Never miss an edition - <strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">subscribe to Intune Weekly on LinkedIn</a></strong>.</p>
+</article>
+<footer class="foot">
+  <a href="https://ugurkocde.github.io/IntuneWeekly/">All editions</a>
+  <a href="https://ugurkocde.github.io/IntuneWeekly/rss.xml">RSS feed</a>
+</footer>
+</div>
+</body>
+</html>
