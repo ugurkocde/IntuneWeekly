@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Intune Weekly - The forward-looking briefing for Microsoft Intune admins</title>
 <meta name="description" content="A weekly briefing for Microsoft Intune admins. What is landing in your tenant soon, what is on the horizon, what shipped, and what the community is hitting in the field.">
+<link rel="alternate" type="application/rss+xml" title="Intune Weekly" href="rss.xml">
 <link rel="icon" href="data:,">
 <style>
 :root {
@@ -44,8 +45,16 @@ h1.brand {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    margin-right: 8px;
 }
 .cta:hover { background: #0f1a30; }
+.cta.secondary {
+    background: transparent;
+    color: var(--navy);
+    border: 1px solid var(--navy);
+    padding: 9px 17px;
+}
+.cta.secondary:hover { background: var(--navy); color: var(--bg); }
 section { margin-bottom: 48px; }
 h2 {
     font-family: 'Playfair Display', Georgia, serif;
@@ -77,6 +86,7 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 0.5px solid var(--rule
     <h1 class="brand">Intune Weekly</h1>
     <p class="tagline">What is landing in your tenant soon, what is on the horizon, what shipped, and what the community is hitting in the field. Every Tuesday.</p>
     <a class="cta" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048" target="_blank" rel="noopener">Subscribe on LinkedIn</a>
+    <a class="cta secondary" href="rss.xml">Subscribe via RSS</a>
 </header>
 
 <section class="about">
