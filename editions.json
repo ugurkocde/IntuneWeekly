@@ -1,5 +1,119 @@
 [
   {
+    "date": "2026-05-05",
+    "edition_no": 2,
+    "date_range": "April 28 - May 4, 2026",
+    "headline": "Hotpatch on by default, Secure Boot deadline looms, and Autopilot stalls hit production.",
+    "pdf_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-05/intune-weekly.pdf",
+    "linkedin_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-05/linkedin-article.md",
+    "radar_items": [
+      {
+        "title": "Secure Boot Certs Expire June 2026 \u2014 Remediate Now",
+        "why": "Unremediated devices will silently stop receiving boot manager updates and may trigger BitLocker recovery prompts \u2014 the June deadline leaves little runway for large inventories.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1syunmi/secureboot_certificate_updates_realitycheck/"
+      },
+      {
+        "title": "Hotpatch Flipped On Tenant-Wide \u2014 May Is First Affected Month",
+        "why": "Microsoft silently enabled Hotpatch for all tenants in April, meaning newly enrolled devices will receive hotpatch instead of a full CU starting in May \u2014 admins must configure exclusion groups now for any devices that should not receive hotpatches.",
+        "source_label": "Microsoft - Message Center",
+        "url": "https://techcommunity.microsoft.com/blog/Windows-ITPro-blog/securing-devices-faster-with-hotpatch-updates-on-by-default/4500066/replies/4516455"
+      },
+      {
+        "title": "Autopilot Pre-Provisioning Stalling at App Install Phase",
+        "why": "Multiple admins are hitting this in production today with no config changes on their end, and the only unblock requires a force-reboot \u2014 active issue to watch before scheduling any provisioning runs this week.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1t3saxx/autopilot_pre_provisioning_stuck_at_app_installs/"
+      },
+      {
+        "title": "Conditional Access Filter Now Hitting Windows Server RDP Sessions",
+        "why": "A backend CA evaluation change is causing policies that should exclude company-owned devices to incorrectly apply to Windows Server 2025 RDP sessions, forcing unexpected 8-hour reauthentication \u2014 admins with device-filter CA policies should audit scope immediately.",
+        "source_label": "Blog - Discussions",
+        "url": "https://techcommunity.microsoft.com/t5/microsoft-intune/policy-applied-allthough-it-shouldn-t/m-p/4516937#M23417"
+      },
+      {
+        "title": "April 2026 Non-Security Preview: Dynamic App Removal + Secure Boot Side-Effect",
+        "why": "This update delivers the new dynamic MSIX/APPX removal capability but also carries the KB5082052 Secure Boot cert prompt side-effect \u2014 admins should read the known issue before pushing to pilot rings.",
+        "source_label": "Microsoft - Release Health",
+        "url": "https://support.microsoft.com/help/5083631"
+      }
+    ],
+    "timeline_items": [
+      {
+        "date": "2026-05-11",
+        "precision": "day",
+        "title": "Retirement of the Semi-Annual Enterprise Channel installation option for unmanaged devices",
+        "url": "https://mc.merill.net/message/MC1249428",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-06-01",
+        "precision": "month",
+        "title": "Intune Suite - Improved elevation detection",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=399933",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-06-01",
+        "precision": "day",
+        "title": "Microsoft Edge for Business: Cross-tenant support using Intune Mobile Application Management (MAM)",
+        "url": "https://mc.merill.net/message/MC1255405",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-06-06",
+        "precision": "day",
+        "title": "Plan for Change: Windows Autopatch is enabling hotpatch updates by default",
+        "url": "https://mc.merill.net/message/MC1248388",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-07-01",
+        "precision": "month",
+        "title": "Intune Suite - Unattended Remote Help for Windows - Remote Sign-in",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=499154",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-07-01",
+        "precision": "month",
+        "title": "[Entra] Microsoft Entra: Microsoft Security Copilot App Lifecycle Management Agent in Microsoft Entra",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=536578",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-08-17",
+        "precision": "day",
+        "title": "Upcoming change: Microsoft 365 Apps SAEC and MEC will unify",
+        "url": "https://mc.merill.net/message/MC1274325",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-24",
+        "precision": "day",
+        "title": "Plan for Change: Update to Intune Data Warehouse infrastructure",
+        "url": "https://mc.merill.net/message/MC1188216",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-31",
+        "precision": "day",
+        "title": "Reminder: \"Require approved client app\" control in Microsoft Entra Conditional Access will be retired in June 2026",
+        "url": "https://mc.merill.net/message/MC1220751",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      }
+    ]
+  },
+  {
     "date": "2026-04-28",
     "edition_no": 1,
     "date_range": "April 21 - 27, 2026",
