@@ -1,5 +1,4 @@
-# Intune Weekly - Edition 3
-_Covering May 5 - 11, 2026_
+# Intune Weekly - Edition 3 (May 5 - 11, 2026)
 
 Tunnel servers stuck, BYOD blocked from Cloud PC, and Power BI connector retiring now.
 
