@@ -6,7 +6,7 @@
     <atom:link href="https://ugurkocde.github.io/IntuneWeekly/rss.xml" rel="self" type="application/rss+xml" />
     <description>A weekly briefing for Microsoft Intune admins. What is landing in your tenant soon, what is on the horizon, what shipped, and what the community is hitting in the field.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 12 May 2026 15:03:09 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 15:12:15 +0000</lastBuildDate>
     <item>
       <title>Edition 3 - May 5 - 11, 2026</title>
       <link>https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-12/</link>
@@ -30,41 +30,51 @@ A PowerShell WPF desktop app that automates the full lifecycle of OEM driver and
 </ul>
 <hr />
 <h2>In this edition</h2>
-<p><strong>Landing in your tenant soon</strong>
-- <a href="https://mc.merill.net/message/MC1303717">Outlook for iOS/Android: Admins Can Allow Users to Override Default Compose Font</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Intune Data Warehouse Beta Connector Retiring in Power BI</a>
-- <a href="https://mc.merill.net/message/MC1304290">M365 2026 Packaging Update Brings Intune Remote Help, Advanced Analytics, and Plan 2 Features to More Suites</a></p>
-<p><strong>On the horizon</strong>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Android Enterprise Personally Owned Work Profile Migrating to Android Management API (AMAPI)</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Controlled Configuration for Microsoft Defender Antivirus Settings (Public Preview)</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Strict Tunnel Mode for Microsoft Tunnel on Android Enterprise (AMAPI)</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Device Control Policy Support Extended to Defender for Endpoint Security Settings Management</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Multiple Managed Accounts for App Protection Policies (iOS/Android)</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Enrollment Time Grouping for Apple ADE Policies Going GA</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Platform SSO Registration During macOS Automated Device Enrollment</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Custom Compliance Settings Coming to macOS</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Client-Driven Compliance Evaluation for Windows (Preview)</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">In-Place Renewal for Cloud PKI Issuing CAs</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">STIG Audit Security Baseline for GCC High Tenants</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Scope Tags Support for Endpoint Privilege Management Reports</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Agentic Identity for the Intune Policy Configuration Agent (Public Preview)</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Grant Enhanced MTD Security Permissions on Android Enterprise</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Silence Apps on Managed Home Screen During Authentication Prompts</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">New Wired Networks (802.1x) Profile for iOS/iPadOS</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Disable MAC Address Randomization on macOS Wi-Fi Profiles</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Block Bluetooth Sharing Setting Added to Android Enterprise Settings Catalog</a></p>
-<p><strong>Action required</strong>
-- <a href="https://techcommunity.microsoft.com/t5/intune-customer-success/known-issue-upgrading-microsoft-tunnel-version-20260129-1/ba-p/4517935">Microsoft Tunnel Servers on Version 20260129.1 Are Stuck - Reinstall or Run Patch Script</a>
-- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Intune Data Warehouse Beta Connector in Power BI: Migrate Before Retirement Completes</a>
-- <a href="https://techcommunity.microsoft.com/t5/microsoft-intune/byod-devices-can-t-launch-windows-365-pc-because-of-device/m-p/4518584#M23436">BYOD Devices Blocked from Windows 365 Cloud PC by Conditional Access - No Clean Exclusion Path</a></p>
-<p><strong>What shipped</strong>
-- <a href="https://www.reddit.com/r/Intune/comments/1t99b0c/check_out_the_new_intune_device_view/">New Intune Device Page Now in Public Preview</a>
-- <a href="https://zerotruststories.com/how-to-use-microsoft-intune-enhanced-app-inventory-for-advanced-insights/">Enhanced App Inventory with Faster Data Updates Now Available</a>
-- <a href="https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-resolve-device-noncompliance-with-mobile-threat/ba-p/4491669">Support Tip Published: Resolving Device Noncompliance with MTD Partner Apps</a>
-- <a href="https://techcommunity.microsoft.com/blog/windows-itpro-blog/configuring-firewall-and-proxies-for-smooth-windows-updates/4517913">Firewall and Proxy Configuration Guide for Windows Update Published</a>
-- <a href="https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/windows-v3.8">Open Intune Baseline 3.8 Released</a></p>
-<p><strong>From the field</strong>
-- <a href="https://www.reddit.com/r/Intune/comments/1t63m0q/intune_enhanced_app_inventory/">Enhanced App Inventory Graph API Endpoint Returning Access Errors</a></p>
+<p><strong>Landing in your tenant soon</strong></p>
+<ul>
+<li><a href="https://mc.merill.net/message/MC1303717">Outlook for iOS/Android: Admins Can Allow Users to Override Default Compose Font</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Intune Data Warehouse Beta Connector Retiring in Power BI</a></li>
+<li><a href="https://mc.merill.net/message/MC1304290">M365 2026 Packaging Update Brings Intune Remote Help, Advanced Analytics, and Plan 2 Features to More Suites</a></li>
+</ul>
+<p><strong>On the horizon</strong></p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Android Enterprise Personally Owned Work Profile Migrating to Android Management API (AMAPI)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Controlled Configuration for Microsoft Defender Antivirus Settings (Public Preview)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Strict Tunnel Mode for Microsoft Tunnel on Android Enterprise (AMAPI)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Device Control Policy Support Extended to Defender for Endpoint Security Settings Management</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Multiple Managed Accounts for App Protection Policies (iOS/Android)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Enrollment Time Grouping for Apple ADE Policies Going GA</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Platform SSO Registration During macOS Automated Device Enrollment</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Custom Compliance Settings Coming to macOS</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Client-Driven Compliance Evaluation for Windows (Preview)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">In-Place Renewal for Cloud PKI Issuing CAs</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">STIG Audit Security Baseline for GCC High Tenants</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Scope Tags Support for Endpoint Privilege Management Reports</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Agentic Identity for the Intune Policy Configuration Agent (Public Preview)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Grant Enhanced MTD Security Permissions on Android Enterprise</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Silence Apps on Managed Home Screen During Authentication Prompts</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">New Wired Networks (802.1x) Profile for iOS/iPadOS</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Disable MAC Address Randomization on macOS Wi-Fi Profiles</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Block Bluetooth Sharing Setting Added to Android Enterprise Settings Catalog</a></li>
+</ul>
+<p><strong>Action required</strong></p>
+<ul>
+<li><a href="https://techcommunity.microsoft.com/t5/intune-customer-success/known-issue-upgrading-microsoft-tunnel-version-20260129-1/ba-p/4517935">Microsoft Tunnel Servers on Version 20260129.1 Are Stuck - Reinstall or Run Patch Script</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Intune Data Warehouse Beta Connector in Power BI: Migrate Before Retirement Completes</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/microsoft-intune/byod-devices-can-t-launch-windows-365-pc-because-of-device/m-p/4518584#M23436">BYOD Devices Blocked from Windows 365 Cloud PC by Conditional Access - No Clean Exclusion Path</a></li>
+</ul>
+<p><strong>What shipped</strong></p>
+<ul>
+<li><a href="https://www.reddit.com/r/Intune/comments/1t99b0c/check_out_the_new_intune_device_view/">New Intune Device Page Now in Public Preview</a></li>
+<li><a href="https://zerotruststories.com/how-to-use-microsoft-intune-enhanced-app-inventory-for-advanced-insights/">Enhanced App Inventory with Faster Data Updates Now Available</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-resolve-device-noncompliance-with-mobile-threat/ba-p/4491669">Support Tip Published: Resolving Device Noncompliance with MTD Partner Apps</a></li>
+<li><a href="https://techcommunity.microsoft.com/blog/windows-itpro-blog/configuring-firewall-and-proxies-for-smooth-windows-updates/4517913">Firewall and Proxy Configuration Guide for Windows Update Published</a></li>
+<li><a href="https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/windows-v3.8">Open Intune Baseline 3.8 Released</a></li>
+</ul>
+<p><strong>From the field</strong></p>
+<ul>
+<li><a href="https://www.reddit.com/r/Intune/comments/1t63m0q/intune_enhanced_app_inventory/">Enhanced App Inventory Graph API Endpoint Returning Access Errors</a></li>
+</ul>
 <hr />
 <p>For the full story on every item, <strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-12/intune-weekly.pdf">download the PDF</a></strong>. The PDF includes the radar, the upcoming-changes timeline, and the full body of each section.</p>
 <p>Never miss an edition - <strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">subscribe to Intune Weekly on LinkedIn</a></strong>.</p>]]></content:encoded>

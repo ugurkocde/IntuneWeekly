@@ -27,11 +27,13 @@ A PowerShell WPF desktop app that automates the full lifecycle of OEM driver and
 ## In this edition
 
 **Landing in your tenant soon**
+
 - [Outlook for iOS/Android: Admins Can Allow Users to Override Default Compose Font](https://mc.merill.net/message/MC1303717)
 - [Intune Data Warehouse Beta Connector Retiring in Power BI](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development)
 - [M365 2026 Packaging Update Brings Intune Remote Help, Advanced Analytics, and Plan 2 Features to More Suites](https://mc.merill.net/message/MC1304290)
 
 **On the horizon**
+
 - [Android Enterprise Personally Owned Work Profile Migrating to Android Management API (AMAPI)](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development)
 - [Controlled Configuration for Microsoft Defender Antivirus Settings (Public Preview)](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development)
 - [Strict Tunnel Mode for Microsoft Tunnel on Android Enterprise (AMAPI)](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development)
@@ -52,11 +54,13 @@ A PowerShell WPF desktop app that automates the full lifecycle of OEM driver and
 - [Block Bluetooth Sharing Setting Added to Android Enterprise Settings Catalog](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development)
 
 **Action required**
+
 - [Microsoft Tunnel Servers on Version 20260129.1 Are Stuck - Reinstall or Run Patch Script](https://techcommunity.microsoft.com/t5/intune-customer-success/known-issue-upgrading-microsoft-tunnel-version-20260129-1/ba-p/4517935)
 - [Intune Data Warehouse Beta Connector in Power BI: Migrate Before Retirement Completes](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development)
 - [BYOD Devices Blocked from Windows 365 Cloud PC by Conditional Access - No Clean Exclusion Path](https://techcommunity.microsoft.com/t5/microsoft-intune/byod-devices-can-t-launch-windows-365-pc-because-of-device/m-p/4518584#M23436)
 
 **What shipped**
+
 - [New Intune Device Page Now in Public Preview](https://www.reddit.com/r/Intune/comments/1t99b0c/check_out_the_new_intune_device_view/)
 - [Enhanced App Inventory with Faster Data Updates Now Available](https://zerotruststories.com/how-to-use-microsoft-intune-enhanced-app-inventory-for-advanced-insights/)
 - [Support Tip Published: Resolving Device Noncompliance with MTD Partner Apps](https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-resolve-device-noncompliance-with-mobile-threat/ba-p/4491669)
@@ -64,6 +68,7 @@ A PowerShell WPF desktop app that automates the full lifecycle of OEM driver and
 - [Open Intune Baseline 3.8 Released](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/windows-v3.8)
 
 **From the field**
+
 - [Enhanced App Inventory Graph API Endpoint Returning Access Errors](https://www.reddit.com/r/Intune/comments/1t63m0q/intune_enhanced_app_inventory/)
 
 ---
