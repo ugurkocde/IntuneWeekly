@@ -1,5 +1,119 @@
 [
   {
+    "date": "2026-05-12",
+    "edition_no": 3,
+    "date_range": "May 5 - 11, 2026",
+    "headline": "Tunnel servers stuck, BYOD blocked from Cloud PC, and Power BI connector retiring now.",
+    "pdf_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-12/intune-weekly.pdf",
+    "linkedin_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-12/linkedin-article.md",
+    "radar_items": [
+      {
+        "title": "Tunnel servers on v20260129.1 stuck \u2014 reinstall required",
+        "why": "Servers on the early-March Tunnel release are not functioning correctly and Microsoft has published a remediation script; admins must act now or deploy version 20260330.1 or later.",
+        "source_label": "Blog - Customer Success",
+        "url": "https://techcommunity.microsoft.com/t5/intune-customer-success/known-issue-upgrading-microsoft-tunnel-version-20260129-1/ba-p/4517935"
+      },
+      {
+        "title": "Power BI Intune beta connector retiring \u2014 no grace period",
+        "why": "The two-week retirement window is already rolling out and once complete all data access stops, so any reports built before November 2025 must be migrated to connector v2 or OData Feed immediately.",
+        "source_label": "Microsoft - In Development",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development"
+      },
+      {
+        "title": "BYOD devices blocked from Windows 365 Cloud PC via CA",
+        "why": "The Windows 365 Client app cannot be individually excluded in Conditional Access compliance policies, causing BYOD devices to be blocked from Cloud PC with no clean workaround yet from Microsoft.",
+        "source_label": "Microsoft - Message Center",
+        "url": "https://techcommunity.microsoft.com/t5/microsoft-intune/byod-devices-can-t-launch-windows-365-pc-because-of-device/m-p/4518584#M23436"
+      },
+      {
+        "title": "Enhanced App Inventory Graph API returning forbidden errors",
+        "why": "Multiple admins confirm the /deviceInventories endpoint is inaccessible via Graph Explorer and PowerShell with no official workaround, blocking automation built around the newly shipped feature.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1t63m0q/intune_enhanced_app_inventory/"
+      },
+      {
+        "title": "M365 suites gaining Intune Plan 2 and Remote Help mid-June",
+        "why": "Intune Remote Help, Advanced Analytics, and Plan 2 capabilities begin rolling into Microsoft 365, Office 365, and EMS suites from mid-June, requiring licensing and budget review before rollout completes August 1.",
+        "source_label": "Microsoft - Message Center",
+        "url": "https://mc.merill.net/message/MC1304290"
+      }
+    ],
+    "timeline_items": [
+      {
+        "date": "2026-06-01",
+        "precision": "month",
+        "title": "Intune Suite - Improved elevation detection",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=399933",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-06-01",
+        "precision": "day",
+        "title": "Microsoft Edge for Business: Cross-tenant support using Intune Mobile Application Management (MAM)",
+        "url": "https://mc.merill.net/message/MC1255405",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-06-06",
+        "precision": "day",
+        "title": "Plan for Change: Windows Autopatch is enabling hotpatch updates by default",
+        "url": "https://mc.merill.net/message/MC1248388",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-07-01",
+        "precision": "month",
+        "title": "Intune Suite - Unattended Remote Help for Windows - Remote Sign-in",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=499154",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-07-01",
+        "precision": "month",
+        "title": "[Entra] Microsoft Entra: Microsoft Security Copilot App Lifecycle Management Agent in Microsoft Entra",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=536578",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-08-17",
+        "precision": "day",
+        "title": "Upcoming change: Microsoft 365 Apps SAEC and MEC will unify",
+        "url": "https://mc.merill.net/message/MC1274325",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-24",
+        "precision": "day",
+        "title": "Plan for Change: Update to Intune Data Warehouse infrastructure",
+        "url": "https://mc.merill.net/message/MC1188216",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-31",
+        "precision": "day",
+        "title": "Reminder: \"Require approved client app\" control in Microsoft Entra Conditional Access will be retired in June 2026",
+        "url": "https://mc.merill.net/message/MC1220751",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-09-01",
+        "precision": "day",
+        "title": "2026 Microsoft 365 Packaging Update",
+        "url": "https://mc.merill.net/message/MC1304290",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      }
+    ]
+  },
+  {
     "date": "2026-05-05",
     "edition_no": 2,
     "date_range": "April 28 - May 4, 2026",

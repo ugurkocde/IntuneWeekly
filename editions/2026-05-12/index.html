@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intune Weekly - Edition 3 - May 5 - 11, 2026</title>
+<meta name="description" content="Tunnel servers stuck, BYOD blocked from Cloud PC, and Power BI connector retiring now.">
+<link rel="alternate" type="application/rss+xml" title="Intune Weekly" href="https://ugurkocde.github.io/IntuneWeekly/rss.xml">
+<link rel="icon" href="data:,">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<meta property="og:title" content="Intune Weekly - Edition 3 - May 5 - 11, 2026">
+<meta property="og:description" content="Tunnel servers stuck, BYOD blocked from Cloud PC, and Power BI connector retiring now.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-12/">
+<style>
+:root {
+  --bg: #faf8f5;
+  --ink: #1a1a1a;
+  --navy: #1a2744;
+  --gold: #d9c692;
+  --rule: #cfcac1;
+  --muted: #6b6760;
+  --link: #1a2744;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+body {
+  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+  line-height: 1.65;
+  font-size: 16px;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+header.masthead { border-bottom: 2px solid var(--navy); padding-bottom: 14px; margin-bottom: 28px; }
+header.masthead h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: -0.5px;
+  color: var(--navy);
+}
+header.masthead .meta {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+.ctas { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0 32px; }
+.ctas a {
+  display: inline-block;
+  padding: 11px 18px;
+  background: var(--navy);
+  color: var(--bg);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+}
+.ctas a.secondary { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
+article h1 { display: none; }
+article h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 26px;
+  margin: 36px 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+  color: var(--navy);
+  font-weight: 700;
+}
+article h3 { font-size: 18px; margin: 22px 0 8px; font-weight: 700; }
+article a { color: var(--link); }
+article p { margin: 12px 0; }
+article ul { padding-left: 22px; }
+article li { margin-bottom: 8px; }
+article hr { border: none; border-top: 1px solid var(--rule); margin: 36px 0; }
+article strong { color: var(--navy); }
+article em { color: var(--muted); }
+footer.foot {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+footer.foot a { color: var(--muted); }
+@media (max-width: 480px) {
+  header.masthead h1 { font-size: 32px; }
+  article h2 { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="masthead">
+  <h1>Intune Weekly</h1>
+  <div class="meta">Edition 3 &middot; May 5 - 11, 2026</div>
+</header>
+<div class="ctas">
+  <a href="intune-weekly.pdf">Download PDF</a>
+  <a class="secondary" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">Follow on LinkedIn</a>
+</div>
+<article>
+<p>Tunnel servers stuck, BYOD blocked from Cloud PC, and Power BI connector retiring now.</p>
+<p><strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-12/intune-weekly.pdf">Download the full PDF →</a></strong></p>
+<p><strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">Subscribe on LinkedIn →</a></strong> to get the next edition every Tuesday</p>
+<hr />
+<h2>Community shoutout</h2>
+<p><strong><a href="https://www.linkedin.com/in/mauricedaly/">Maurice Daly</a></strong> - <em>Driver Automation Tool</em>
+A PowerShell WPF desktop app that automates the full lifecycle of OEM driver and BIOS package management for ConfigMgr and Intune. It discovers vendor catalogs, downloads with resume-enabled curl, extracts, builds WIMs, and wraps packages as .intunewin for Win32 deployment. Multi-OEM support, BIOS update handling, hash verification, and configurable packaging (DISM/wimlib/7-Zip) collapse hours of manual driver work into a single signed workflow. <a href="https://github.com/maurice-daly/DriverAutomationTool">Read more</a></p>
+<h2>On the radar this week</h2>
+<ul>
+<li><strong><a href="https://techcommunity.microsoft.com/t5/intune-customer-success/known-issue-upgrading-microsoft-tunnel-version-20260129-1/ba-p/4517935">Tunnel servers on v20260129.1 stuck - reinstall required</a></strong> <em>(Blog - Customer Success)</em> - Servers on the early-March Tunnel release are not functioning correctly and Microsoft has published a remediation script; admins must act now or deploy version 20260330.1 or later.</li>
+<li><strong><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Power BI Intune beta connector retiring - no grace period</a></strong> <em>(Microsoft - In Development)</em> - The two-week retirement window is already rolling out and once complete all data access stops, so any reports built before November 2025 must be migrated to connector v2 or OData Feed immediately.</li>
+<li><strong><a href="https://techcommunity.microsoft.com/t5/microsoft-intune/byod-devices-can-t-launch-windows-365-pc-because-of-device/m-p/4518584#M23436">BYOD devices blocked from Windows 365 Cloud PC via CA</a></strong> <em>(Microsoft - Message Center)</em> - The Windows 365 Client app cannot be individually excluded in Conditional Access compliance policies, causing BYOD devices to be blocked from Cloud PC with no clean workaround yet from Microsoft.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1t63m0q/intune_enhanced_app_inventory/">Enhanced App Inventory Graph API returning forbidden errors</a></strong> <em>(Reddit)</em> - Multiple admins confirm the /deviceInventories endpoint is inaccessible via Graph Explorer and PowerShell with no official workaround, blocking automation built around the newly shipped feature.</li>
+<li><strong><a href="https://mc.merill.net/message/MC1304290">M365 suites gaining Intune Plan 2 and Remote Help mid-June</a></strong> <em>(Microsoft - Message Center)</em> - Intune Remote Help, Advanced Analytics, and Plan 2 capabilities begin rolling into Microsoft 365, Office 365, and EMS suites from mid-June, requiring licensing and budget review before rollout completes August 1.</li>
+</ul>
+<hr />
+<h2>In this edition</h2>
+<p><strong>Landing in your tenant soon</strong>
+- <a href="https://mc.merill.net/message/MC1303717">Outlook for iOS/Android: Admins Can Allow Users to Override Default Compose Font</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Intune Data Warehouse Beta Connector Retiring in Power BI</a>
+- <a href="https://mc.merill.net/message/MC1304290">M365 2026 Packaging Update Brings Intune Remote Help, Advanced Analytics, and Plan 2 Features to More Suites</a></p>
+<p><strong>On the horizon</strong>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Android Enterprise Personally Owned Work Profile Migrating to Android Management API (AMAPI)</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Controlled Configuration for Microsoft Defender Antivirus Settings (Public Preview)</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Strict Tunnel Mode for Microsoft Tunnel on Android Enterprise (AMAPI)</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Device Control Policy Support Extended to Defender for Endpoint Security Settings Management</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Multiple Managed Accounts for App Protection Policies (iOS/Android)</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Enrollment Time Grouping for Apple ADE Policies Going GA</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Platform SSO Registration During macOS Automated Device Enrollment</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Custom Compliance Settings Coming to macOS</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Client-Driven Compliance Evaluation for Windows (Preview)</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">In-Place Renewal for Cloud PKI Issuing CAs</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">STIG Audit Security Baseline for GCC High Tenants</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Scope Tags Support for Endpoint Privilege Management Reports</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Agentic Identity for the Intune Policy Configuration Agent (Public Preview)</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Grant Enhanced MTD Security Permissions on Android Enterprise</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Silence Apps on Managed Home Screen During Authentication Prompts</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">New Wired Networks (802.1x) Profile for iOS/iPadOS</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Disable MAC Address Randomization on macOS Wi-Fi Profiles</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Block Bluetooth Sharing Setting Added to Android Enterprise Settings Catalog</a></p>
+<p><strong>Action required</strong>
+- <a href="https://techcommunity.microsoft.com/t5/intune-customer-success/known-issue-upgrading-microsoft-tunnel-version-20260129-1/ba-p/4517935">Microsoft Tunnel Servers on Version 20260129.1 Are Stuck - Reinstall or Run Patch Script</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Intune Data Warehouse Beta Connector in Power BI: Migrate Before Retirement Completes</a>
+- <a href="https://techcommunity.microsoft.com/t5/microsoft-intune/byod-devices-can-t-launch-windows-365-pc-because-of-device/m-p/4518584#M23436">BYOD Devices Blocked from Windows 365 Cloud PC by Conditional Access - No Clean Exclusion Path</a></p>
+<p><strong>What shipped</strong>
+- <a href="https://www.reddit.com/r/Intune/comments/1t99b0c/check_out_the_new_intune_device_view/">New Intune Device Page Now in Public Preview</a>
+- <a href="https://zerotruststories.com/how-to-use-microsoft-intune-enhanced-app-inventory-for-advanced-insights/">Enhanced App Inventory with Faster Data Updates Now Available</a>
+- <a href="https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-resolve-device-noncompliance-with-mobile-threat/ba-p/4491669">Support Tip Published: Resolving Device Noncompliance with MTD Partner Apps</a>
+- <a href="https://techcommunity.microsoft.com/blog/windows-itpro-blog/configuring-firewall-and-proxies-for-smooth-windows-updates/4517913">Firewall and Proxy Configuration Guide for Windows Update Published</a>
+- <a href="https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/windows-v3.8">Open Intune Baseline 3.8 Released</a></p>
+<p><strong>From the field</strong>
+- <a href="https://www.reddit.com/r/Intune/comments/1t63m0q/intune_enhanced_app_inventory/">Enhanced App Inventory Graph API Endpoint Returning Access Errors</a></p>
+<hr />
+<p>For the full story on every item, <strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-12/intune-weekly.pdf">download the PDF</a></strong>. The PDF includes the radar, the upcoming-changes timeline, and the full body of each section.</p>
+<p>Never miss an edition - <strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">subscribe to Intune Weekly on LinkedIn</a></strong>.</p>
+</article>
+<footer class="foot">
+  <a href="https://ugurkocde.github.io/IntuneWeekly/">All editions</a>
+  <a href="https://ugurkocde.github.io/IntuneWeekly/rss.xml">RSS feed</a>
+</footer>
+</div>
+</body>
+</html>
