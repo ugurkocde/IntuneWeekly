@@ -1,5 +1,119 @@
 [
   {
+    "date": "2026-05-19",
+    "edition_no": 4,
+    "date_range": "May 12 - 18, 2026",
+    "headline": "YellowKey BitLocker bypass, Hotpatch silently enabled, and Secure Boot certs expiring June 2026.",
+    "pdf_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-19/intune-weekly.pdf",
+    "linkedin_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-19/linkedin-article.md",
+    "radar_items": [
+      {
+        "title": "YellowKey BitLocker Bypass \u2014 No Official Patch Yet",
+        "why": "Admins managing standalone Windows devices must evaluate disabling WinRE immediately as the only confirmed mitigation until Microsoft issues a fix; Entra-joined devices appear protected but should be verified.",
+        "source_label": "Microsoft - Learn",
+        "url": "https://www.reddit.com/r/sysadmin/comments/1tgr205/yellowkey_mitigation/"
+      },
+      {
+        "title": "Hotpatch Silently Enabled Tenant-Wide from May 12",
+        "why": "Admins may be unaware devices are running hotpatch builds instead of the standard May CU, and those rolling out Secure Boot cert updates should expect additional unexpected reboots until the quarterly baseline CU applies.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1tc2v5b/hot_patch_on_by_default_now/"
+      },
+      {
+        "title": "Intune Admin Center 'Access Denied' Outage on May 18",
+        "why": "Multiple admins lost access to the Intune admin center despite holding valid admin roles, and the Azure status page incorrectly showed all healthy \u2014 admins should know to open a support ticket rather than rely on the status page during future incidents.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1tgr0kv/anyone_else_getting_access_denied_in_intune/"
+      },
+      {
+        "title": "Secure Boot Certificates Expiring June 2026 \u2014 Rollout Planning Urgent",
+        "why": "With expiry less than 13 months away and hotpatch now delaying certificate delivery to quarterly CU cycles, admins should use the updated Autopatch Secure Boot Status report now to identify unready devices and sequence rollouts.",
+        "source_label": "Microsoft - Release Health",
+        "url": "https://techcommunity.microsoft.com/event/windowsevents/ask-microsoft-anything-secure-boot---may-2026/4513524"
+      },
+      {
+        "title": "Intune Data Warehouse Beta Power BI Connector Retiring",
+        "why": "The gradual retirement began in late April 2026 and any Power BI reports built before November 2025 will lose data access if not migrated to connector v2 or the OData Feed connector immediately.",
+        "source_label": "Microsoft - In Development",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development"
+      }
+    ],
+    "timeline_items": [
+      {
+        "date": "2026-06-01",
+        "precision": "month",
+        "title": "Intune Suite - Improved elevation detection",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=399933",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-06-01",
+        "precision": "day",
+        "title": "Microsoft Edge for Business: Cross-tenant support using Intune Mobile Application Management (MAM)",
+        "url": "https://mc.merill.net/message/MC1255405",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-06-06",
+        "precision": "day",
+        "title": "Plan for Change: Windows Autopatch is enabling hotpatch updates by default",
+        "url": "https://mc.merill.net/message/MC1248388",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-07-01",
+        "precision": "month",
+        "title": "Intune Suite - Unattended Remote Help for Windows - Remote Sign-in",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=499154",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-07-01",
+        "precision": "month",
+        "title": "[Entra] Microsoft Entra: Microsoft Security Copilot App Lifecycle Management Agent in Microsoft Entra",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=536578",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-08-17",
+        "precision": "day",
+        "title": "Upcoming change: Microsoft 365 Apps SAEC and MEC will unify",
+        "url": "https://mc.merill.net/message/MC1274325",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-24",
+        "precision": "day",
+        "title": "Plan for Change: Update to Intune Data Warehouse infrastructure",
+        "url": "https://mc.merill.net/message/MC1188216",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-31",
+        "precision": "day",
+        "title": "Reminder: \"Require approved client app\" control in Microsoft Entra Conditional Access will be retired in June 2026",
+        "url": "https://mc.merill.net/message/MC1220751",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-09-01",
+        "precision": "day",
+        "title": "2026 Microsoft 365 Packaging Update",
+        "url": "https://mc.merill.net/message/MC1304290",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      }
+    ]
+  },
+  {
     "date": "2026-05-12",
     "edition_no": 3,
     "date_range": "May 5 - 11, 2026",

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intune Weekly - Edition 4 - May 12 - 18, 2026</title>
+<meta name="description" content="YellowKey BitLocker bypass, Hotpatch silently enabled, and Secure Boot certs expiring June 2026.">
+<link rel="alternate" type="application/rss+xml" title="Intune Weekly" href="https://ugurkocde.github.io/IntuneWeekly/rss.xml">
+<link rel="icon" href="data:,">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<meta property="og:title" content="Intune Weekly - Edition 4 - May 12 - 18, 2026">
+<meta property="og:description" content="YellowKey BitLocker bypass, Hotpatch silently enabled, and Secure Boot certs expiring June 2026.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-19/">
+<style>
+:root {
+  --bg: #faf8f5;
+  --ink: #1a1a1a;
+  --navy: #1a2744;
+  --gold: #d9c692;
+  --rule: #cfcac1;
+  --muted: #6b6760;
+  --link: #1a2744;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+body {
+  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+  line-height: 1.65;
+  font-size: 16px;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+header.masthead { border-bottom: 2px solid var(--navy); padding-bottom: 14px; margin-bottom: 28px; }
+header.masthead h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: -0.5px;
+  color: var(--navy);
+}
+header.masthead .meta {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+.ctas { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0 32px; }
+.ctas a {
+  display: inline-block;
+  padding: 11px 18px;
+  background: var(--navy);
+  color: var(--bg);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+}
+.ctas a.secondary { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
+article h1 { display: none; }
+article h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 26px;
+  margin: 36px 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+  color: var(--navy);
+  font-weight: 700;
+}
+article h3 { font-size: 18px; margin: 22px 0 8px; font-weight: 700; }
+article a { color: var(--link); }
+article p { margin: 12px 0; }
+article ul { padding-left: 22px; }
+article li { margin-bottom: 8px; }
+article hr { border: none; border-top: 1px solid var(--rule); margin: 36px 0; }
+article strong { color: var(--navy); }
+article em { color: var(--muted); }
+footer.foot {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+footer.foot a { color: var(--muted); }
+@media (max-width: 480px) {
+  header.masthead h1 { font-size: 32px; }
+  article h2 { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="masthead">
+  <h1>Intune Weekly</h1>
+  <div class="meta">Edition 4 &middot; May 12 - 18, 2026</div>
+</header>
+<div class="ctas">
+  <a href="intune-weekly.pdf">Download PDF</a>
+  <a class="secondary" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">Follow on LinkedIn</a>
+</div>
+<article>
+<p>YellowKey BitLocker bypass, Hotpatch silently enabled, and Secure Boot certs expiring June 2026.</p>
+<p><strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-19/intune-weekly.pdf">Download the full PDF →</a></strong></p>
+<p><strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">Subscribe on LinkedIn →</a></strong> to get the next edition every Tuesday</p>
+<hr />
+<h2>Community shoutout</h2>
+<p><strong><a href="https://www.linkedin.com/in/simonskotheimsvik/">Simon Skotheimsvik</a></strong> - <em>1PhoneMirror</em>
+A Windows-based screen-mirroring receiver built for Intune admins who need consistent, framed mobile screens for documentation and training. Supports iOS/macOS AirPlay (with optional PIN), Android wireless debugging via bundled adb/scrcpy, and experimental Miracast, with one-click screenshots or MP4/GIF recordings inside a device frame. Multiple devices stay paired and can be switched from a bottom bezel, with no app installs on the phones. <a href="https://www.awesomeintune.com/tools/1phonemirror">Read more</a></p>
+<h2>On the radar this week</h2>
+<ul>
+<li><strong><a href="https://www.reddit.com/r/sysadmin/comments/1tgr205/yellowkey_mitigation/">YellowKey BitLocker Bypass - No Official Patch Yet</a></strong> <em>(Microsoft - Learn)</em> - Admins managing standalone Windows devices must evaluate disabling WinRE immediately as the only confirmed mitigation until Microsoft issues a fix; Entra-joined devices appear protected but should be verified.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1tc2v5b/hot_patch_on_by_default_now/">Hotpatch Silently Enabled Tenant-Wide from May 12</a></strong> <em>(Reddit)</em> - Admins may be unaware devices are running hotpatch builds instead of the standard May CU, and those rolling out Secure Boot cert updates should expect additional unexpected reboots until the quarterly baseline CU applies.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1tgr0kv/anyone_else_getting_access_denied_in_intune/">Intune Admin Center 'Access Denied' Outage on May 18</a></strong> <em>(Reddit)</em> - Multiple admins lost access to the Intune admin center despite holding valid admin roles, and the Azure status page incorrectly showed all healthy - admins should know to open a support ticket rather than rely on the status page during future incidents.</li>
+<li><strong><a href="https://techcommunity.microsoft.com/event/windowsevents/ask-microsoft-anything-secure-boot---may-2026/4513524">Secure Boot Certificates Expiring June 2026 - Rollout Planning Urgent</a></strong> <em>(Microsoft - Release Health)</em> - With expiry less than 13 months away and hotpatch now delaying certificate delivery to quarterly CU cycles, admins should use the updated Autopatch Secure Boot Status report now to identify unready devices and sequence rollouts.</li>
+<li><strong><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Intune Data Warehouse Beta Power BI Connector Retiring</a></strong> <em>(Microsoft - In Development)</em> - The gradual retirement began in late April 2026 and any Power BI reports built before November 2025 will lose data access if not migrated to connector v2 or the OData Feed connector immediately.</li>
+</ul>
+<hr />
+<h2>In this edition</h2>
+<p><strong>Landing in your tenant soon</strong>
+- <a href="https://techcommunity.microsoft.com/t5/intune-customer-success/new-platform-sso-with-registration-during-automated-device/ba-p/4519846">Platform SSO with Registration During Automated Device Enrollment Now GA for macOS</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Intune Data Warehouse Beta Connector in Power BI Retiring - Transition Now</a>
+- <a href="https://www.reddit.com/r/sysadmin/comments/1tdy52o/fyi_enabling_windows_hotpatch_while_update_secure/">Hotpatch Now On by Default - Conflict with Secure Boot Cert Rollout</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Enrollment Time Grouping for Apple ADE Policies Going GA</a>
+- <a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/updated-secure-boot-status-report-in-windows-autopatch/ba-p/4517920">Updated Secure Boot Status Report in Windows Autopatch Now Available</a></p>
+<p><strong>On the horizon</strong>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Android Personally Owned Work Profile Devices Moving to Android Management API (AMAPI)</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Controlled Configuration for Microsoft Defender Antivirus Settings Coming to Public Preview</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Strict Tunnel Mode for Microsoft Tunnel on Android (AMAPI Devices)</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Multiple Managed Accounts for App Protection Policies Coming to iOS and Android</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Device Control Policy Support Extended to Defender for Endpoint Security Settings Management</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Scope Tags to be Enforced on EPM Reports</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">In-Place Renewal for Cloud PKI Issuing Certificate Authorities</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Custom Compliance Settings Coming to macOS</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Client-Driven Compliance Evaluation for Windows Devices Coming to Preview</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">New STIG Audit Security Baseline for GCC High Tenants</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">New 802.1x Wired Networks Profile for iOS/iPadOS</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Disable MAC Address Randomization Setting for macOS Wi-Fi Profiles</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Block Bluetooth Sharing Setting Added to Android Enterprise Settings Catalog</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Grant Enhanced Security Permissions to MTD App on Android Enterprise</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Silence Apps on Managed Home Screen During Authentication Prompts</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Agentic Identity for the Policy Configuration Agent Coming to Public Preview</a>
+- <a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/admin-insights-for-windows-365-stay-on-top-of-what-needs/ba-p/4517570">Admin Insights for Windows 365 Now in Public Preview</a></p>
+<p><strong>Action required</strong>
+- <a href="https://techcommunity.microsoft.com/event/windowsevents/ask-microsoft-anything-secure-boot---may-2026/4513524">Secure Boot Certificates Begin Expiring June 2026 - Plan Your Rollout Now</a>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Intune Data Warehouse Beta Power BI Connector Retiring - Migrate Before Data Access Ends</a>
+- <a href="https://www.reddit.com/r/sysadmin/comments/1tgr205/yellowkey_mitigation/">YellowKey BitLocker Bypass - No Official Patch Yet, Evaluate Mitigations</a></p>
+<p><strong>What shipped</strong>
+- <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Multiple In-Development Features Removed from the List - Likely Shipped</a></p>
+<p><strong>From the field</strong>
+- <a href="https://www.reddit.com/r/Intune/comments/1tgr0kv/anyone_else_getting_access_denied_in_intune/">Widespread "Access Denied" Errors Hit Intune Admin Center - Unacknowledged on Status Page</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1tc2v5b/hot_patch_on_by_default_now/">Hotpatch Silently Enabled by Default - Many Admins Unaware</a>
+- <a href="https://www.reddit.com/r/sysadmin/comments/1td6g1n/yellowkey_working_irl/">YellowKey BitLocker Bypass: Field Testing Shows Entra-Joined Devices Appear Protected</a>
+- <a href="https://www.reddit.com/r/Intune/comments/1td7ebq/autopatch_hit_users_with_a_40min_update_from_24h2/">Autopatch Upgrading Devices from 23H2 to 25H2 Takes 40+ Minutes - Not a Bug</a></p>
+<hr />
+<p>For the full story on every item, <strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-19/intune-weekly.pdf">download the PDF</a></strong>. The PDF includes the radar, the upcoming-changes timeline, and the full body of each section.</p>
+<p>Never miss an edition - <strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">subscribe to Intune Weekly on LinkedIn</a></strong>.</p>
+</article>
+<footer class="foot">
+  <a href="https://ugurkocde.github.io/IntuneWeekly/">All editions</a>
+  <a href="https://ugurkocde.github.io/IntuneWeekly/rss.xml">RSS feed</a>
+</footer>
+</div>
+</body>
+</html>
