@@ -6,7 +6,7 @@
     <atom:link href="https://ugurkocde.github.io/IntuneWeekly/rss.xml" rel="self" type="application/rss+xml" />
     <description>A weekly briefing for Microsoft Intune admins. What is landing in your tenant soon, what is on the horizon, what shipped, and what the community is hitting in the field.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 26 May 2026 10:32:45 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 14:32:29 +0000</lastBuildDate>
     <item>
       <title>Edition 5 - May 19 - 25, 2026</title>
       <link>https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-26/</link>
@@ -17,6 +17,9 @@
 <p><strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-26/intune-weekly.pdf">Download the full PDF →</a></strong></p>
 <p><strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">Subscribe on LinkedIn →</a></strong> to get the next edition every Tuesday</p>
 <hr />
+<h2>Community shoutout</h2>
+<p><strong><a href="https://www.linkedin.com/in/sandy-tsang">Sandy Zeng</a></strong> - <em>IntuneDiff</em>
+A diff/compare tool for Intune configurations that lets admins spot drift between policies, profiles, and tenants at a glance. Available as a website and now also as a PowerShell module on the PowerShell Gallery, so the same comparison logic can be scripted into reviews, audits, and CI checks. <a href="https://www.awesomeintune.com/tools/intune-diff">Read more</a></p>
 <h2>On the radar this week</h2>
 <ul>
 <li><strong><a href="https://www.reddit.com/r/Intune/comments/1tik9fl/bitlocker_issues_with_kb5089549/">BitLocker Recovery Loop After May KB5089549</a></strong> <em>(Reddit)</em> - Windows 11 devices are looping on the BitLocker recovery screen after every reboot post-patch - HP has a firmware workaround but admins need to act before wider deployment.</li>

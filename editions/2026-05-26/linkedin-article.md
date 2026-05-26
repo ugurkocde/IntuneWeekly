@@ -9,6 +9,11 @@ BitLocker loops return, passkeys bypassed by AiTM, and scripts reporting still b
 
 ---
 
+## Community shoutout
+
+**[Sandy Zeng](https://www.linkedin.com/in/sandy-tsang)** - _IntuneDiff_
+A diff/compare tool for Intune configurations that lets admins spot drift between policies, profiles, and tenants at a glance. Available as a website and now also as a PowerShell module on the PowerShell Gallery, so the same comparison logic can be scripted into reviews, audits, and CI checks. [Read more](https://www.awesomeintune.com/tools/intune-diff)
+
 ## On the radar this week
 
 - **[BitLocker Recovery Loop After May KB5089549](https://www.reddit.com/r/Intune/comments/1tik9fl/bitlocker_issues_with_kb5089549/)** _(Reddit)_ - Windows 11 devices are looping on the BitLocker recovery screen after every reboot post-patch - HP has a firmware workaround but admins need to act before wider deployment.
