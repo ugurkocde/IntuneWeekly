@@ -6,7 +6,63 @@
     <atom:link href="https://ugurkocde.github.io/IntuneWeekly/rss.xml" rel="self" type="application/rss+xml" />
     <description>A weekly briefing for Microsoft Intune admins. What is landing in your tenant soon, what is on the horizon, what shipped, and what the community is hitting in the field.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 19 May 2026 17:10:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 10:32:45 +0000</lastBuildDate>
+    <item>
+      <title>Edition 5 - May 19 - 25, 2026</title>
+      <link>https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-26/</link>
+      <guid isPermaLink="true">https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-26/</guid>
+      <pubDate>Tue, 26 May 2026 12:00:00 +0000</pubDate>
+      <description><![CDATA[BitLocker loops return, passkeys bypassed by AiTM, and scripts reporting still broken.]]></description>
+      <content:encoded><![CDATA[<p>BitLocker loops return, passkeys bypassed by AiTM, and scripts reporting still broken.</p>
+<p><strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-26/intune-weekly.pdf">Download the full PDF →</a></strong></p>
+<p><strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">Subscribe on LinkedIn →</a></strong> to get the next edition every Tuesday</p>
+<hr />
+<h2>On the radar this week</h2>
+<ul>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1tik9fl/bitlocker_issues_with_kb5089549/">BitLocker Recovery Loop After May KB5089549</a></strong> <em>(Reddit)</em> - Windows 11 devices are looping on the BitLocker recovery screen after every reboot post-patch - HP has a firmware workaround but admins need to act before wider deployment.</li>
+<li><strong><a href="https://www.reddit.com/r/sysadmin/comments/1tklvyg/intuneazure_passkeys_now_compromised_in_addition/">Passkeys Not Blocking AiTM Session Token Theft</a></strong> <em>(Reddit)</em> - Confirmed compromises show phishing-resistant MFA alone doesn't stop session hijacking - admins should add token protection and Continuous Access Evaluation policies now.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1tkm0t4/monitoring_and_remediation_script_results_not/">Remediation Script Reporting Still Stale Post-Outage</a></strong> <em>(Reddit)</em> - Console results are still showing May 16–17 timestamps days after recovery, so any compliance or operational decisions based on console data are unreliable until Microsoft closes the investigation.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1tk9hg2/switched_telemetry_to_full_for_secure_boot_cert/">Low Telemetry Hides Devices from Secure Boot Report</a></strong> <em>(Reddit)</em> - Devices on 'Security' telemetry level are completely invisible to the Secure Boot certificate report, meaning admins may be miscounting compliance exposure ahead of the certificate rollout deadline.</li>
+<li><strong><a href="https://mc.merill.net/message/MC1304290">Remote Help &amp; Advanced Analytics Rolling Into M365 Suites</a></strong> <em>(Microsoft - Message Center)</em> - Starting mid-June, these premium add-on features begin landing automatically in M365/EMS SKUs - admins should review licensing now to avoid surprise capacity or configuration gaps.</li>
+</ul>
+<hr />
+<h2>In this edition</h2>
+<p><strong>Landing in your tenant soon</strong></p>
+<ul>
+<li><a href="https://mc.merill.net/message/MC1304290">Remote Help and Intune Advanced Analytics Coming to M365 / EMS Suites in Mid-June</a></li>
+</ul>
+<p><strong>On the horizon</strong></p>
+<ul>
+<li><a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/admin-insights-for-windows-365-stay-on-top-of-what-needs/ba-p/4517570">Admin Insights for Windows 365 Now in Public Preview</a></li>
+</ul>
+<p><strong>Action required</strong></p>
+<ul>
+<li><a href="https://www.reddit.com/r/Intune/comments/1timxi3/platform_scripts_all_returning_404not_found_errors/">Remediation and Platform Scripts Reporting Broken - Multi-Tenant Outage Now Resolved</a></li>
+</ul>
+<p><strong>What shipped</strong></p>
+<ul>
+<li><a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/updated-secure-boot-status-report-in-windows-autopatch/ba-p/4517920">Updated Secure Boot Status Report Now Live in Windows Autopatch</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Batch of In-Development Features Removed - Likely Shipped or Cancelled</a></li>
+</ul>
+<p><strong>From the field</strong></p>
+<ul>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tik9fl/bitlocker_issues_with_kb5089549/">BitLocker Recovery Loop Returns After May KB5089549 - Worse Than April's KB5083769</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tk9hg2/switched_telemetry_to_full_for_secure_boot_cert/">Telemetry Level Affects Secure Boot Certificate Report Visibility</a></li>
+<li><a href="https://www.reddit.com/r/sysadmin/comments/1tklvyg/intuneazure_passkeys_now_compromised_in_addition/">Passkeys Not Stopping Session Token Theft via AiTM Attacks</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tkm0t4/monitoring_and_remediation_script_results_not/">Remediation Script Console Reporting Still Delayed Days After Outage Recovery</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tnqa5o/intune_microsoft_store_app_deployment_fails/">Microsoft Store App Deployment Fails Reporting When Store Access Is Blocked by Policy</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1thurqe/built_a_framework_for_sccmtointune_migration_that/">SCCM-to-Intune Migration Framework Automates Autopilot Import - 6.5 Hours to 30 Minutes</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tld2as/driver_automation_tool_feedback/">Driver Automation Tool v10 Seeking Community Feedback</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1thjuwk/we_have_a_byod_policy_that_says_personal_devices/">94 Personal Devices Enrolled Despite BYOD Policy - Enforcement Gap Pattern</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tis2jb/windows_hello_for_business/">Windows Hello for Business Cloud Kerberos Trust Fails on Hybrid-Joined Devices</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tklsr9/intune_admin_center_supported_dark_mode_all_this/">Dark Mode QR Code Bug: Enrollment Token QR Codes Won't Scan in Dark Mode</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tn4mc7/laps_for_macos_not_working/">LAPS for macOS Intermittently Failing - Username Case Sensitivity Is a Factor</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tio4ma/how_are_you_keeping_the_bios_up_to_date_for_your/">Dell BIOS/Firmware Management via Intune: DCU + Autopatch Approaches Compared</a></li>
+</ul>
+<hr />
+<p>For the full story on every item, <strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-26/intune-weekly.pdf">download the PDF</a></strong>. The PDF includes the radar, the upcoming-changes timeline, and the full body of each section.</p>
+<p>Never miss an edition - <strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">subscribe to Intune Weekly on LinkedIn</a></strong>.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Edition 4 - May 12 - 18, 2026</title>
       <link>https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-19/</link>

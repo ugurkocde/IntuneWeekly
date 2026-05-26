@@ -1,5 +1,119 @@
 [
   {
+    "date": "2026-05-26",
+    "edition_no": 5,
+    "date_range": "May 19 - 25, 2026",
+    "headline": "BitLocker loops return, passkeys bypassed by AiTM, and scripts reporting still broken.",
+    "pdf_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-26/intune-weekly.pdf",
+    "linkedin_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-05-26/linkedin-article.md",
+    "radar_items": [
+      {
+        "title": "BitLocker Recovery Loop After May KB5089549",
+        "why": "Windows 11 devices are looping on the BitLocker recovery screen after every reboot post-patch \u2014 HP has a firmware workaround but admins need to act before wider deployment.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1tik9fl/bitlocker_issues_with_kb5089549/"
+      },
+      {
+        "title": "Passkeys Not Blocking AiTM Session Token Theft",
+        "why": "Confirmed compromises show phishing-resistant MFA alone doesn't stop session hijacking \u2014 admins should add token protection and Continuous Access Evaluation policies now.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/sysadmin/comments/1tklvyg/intuneazure_passkeys_now_compromised_in_addition/"
+      },
+      {
+        "title": "Remediation Script Reporting Still Stale Post-Outage",
+        "why": "Console results are still showing May 16\u201317 timestamps days after recovery, so any compliance or operational decisions based on console data are unreliable until Microsoft closes the investigation.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1tkm0t4/monitoring_and_remediation_script_results_not/"
+      },
+      {
+        "title": "Low Telemetry Hides Devices from Secure Boot Report",
+        "why": "Devices on 'Security' telemetry level are completely invisible to the Secure Boot certificate report, meaning admins may be miscounting compliance exposure ahead of the certificate rollout deadline.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1tk9hg2/switched_telemetry_to_full_for_secure_boot_cert/"
+      },
+      {
+        "title": "Remote Help & Advanced Analytics Rolling Into M365 Suites",
+        "why": "Starting mid-June, these premium add-on features begin landing automatically in M365/EMS SKUs \u2014 admins should review licensing now to avoid surprise capacity or configuration gaps.",
+        "source_label": "Microsoft - Message Center",
+        "url": "https://mc.merill.net/message/MC1304290"
+      }
+    ],
+    "timeline_items": [
+      {
+        "date": "2026-06-01",
+        "precision": "month",
+        "title": "Intune Suite - Improved elevation detection",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=399933",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-06-01",
+        "precision": "day",
+        "title": "Microsoft Edge for Business: Cross-tenant support using Intune Mobile Application Management (MAM)",
+        "url": "https://mc.merill.net/message/MC1255405",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-06-06",
+        "precision": "day",
+        "title": "Plan for Change: Windows Autopatch is enabling hotpatch updates by default",
+        "url": "https://mc.merill.net/message/MC1248388",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-07-01",
+        "precision": "month",
+        "title": "Intune Suite - Unattended Remote Help for Windows - Remote Sign-in",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=499154",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-07-01",
+        "precision": "month",
+        "title": "[Entra] Microsoft Entra: Microsoft Security Copilot App Lifecycle Management Agent in Microsoft Entra",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=536578",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-08-17",
+        "precision": "day",
+        "title": "Upcoming change: Microsoft 365 Apps SAEC and MEC will unify",
+        "url": "https://mc.merill.net/message/MC1274325",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-24",
+        "precision": "day",
+        "title": "Plan for Change: Update to Intune Data Warehouse infrastructure",
+        "url": "https://mc.merill.net/message/MC1188216",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-31",
+        "precision": "day",
+        "title": "Reminder: \"Require approved client app\" control in Microsoft Entra Conditional Access will be retired in June 2026",
+        "url": "https://mc.merill.net/message/MC1220751",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-09-01",
+        "precision": "day",
+        "title": "2026 Microsoft 365 Packaging Update",
+        "url": "https://mc.merill.net/message/MC1304290",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      }
+    ]
+  },
+  {
     "date": "2026-05-19",
     "edition_no": 4,
     "date_range": "May 12 - 18, 2026",
