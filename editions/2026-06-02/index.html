@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intune Weekly - Edition 6 - May 26 - June 1, 2026</title>
+<meta name="description" content="Service outages hit Autopatch &amp; Proactive Remediation; critical defaults let users wipe corporate devices.">
+<link rel="alternate" type="application/rss+xml" title="Intune Weekly" href="https://ugurkocde.github.io/IntuneWeekly/rss.xml">
+<link rel="icon" href="data:,">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<meta property="og:title" content="Intune Weekly - Edition 6 - May 26 - June 1, 2026">
+<meta property="og:description" content="Service outages hit Autopatch &amp; Proactive Remediation; critical defaults let users wipe corporate devices.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-02/">
+<style>
+:root {
+  --bg: #faf8f5;
+  --ink: #1a1a1a;
+  --navy: #1a2744;
+  --gold: #d9c692;
+  --rule: #cfcac1;
+  --muted: #6b6760;
+  --link: #1a2744;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+body {
+  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+  line-height: 1.65;
+  font-size: 16px;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+header.masthead { border-bottom: 2px solid var(--navy); padding-bottom: 14px; margin-bottom: 28px; }
+header.masthead h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: -0.5px;
+  color: var(--navy);
+}
+header.masthead .meta {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+.ctas { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0 32px; }
+.ctas a {
+  display: inline-block;
+  padding: 11px 18px;
+  background: var(--navy);
+  color: var(--bg);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+}
+.ctas a.secondary { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
+article h1 { display: none; }
+article h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 26px;
+  margin: 36px 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+  color: var(--navy);
+  font-weight: 700;
+}
+article h3 { font-size: 18px; margin: 22px 0 8px; font-weight: 700; }
+article a { color: var(--link); }
+article p { margin: 12px 0; }
+article ul { padding-left: 22px; }
+article li { margin-bottom: 8px; }
+article hr { border: none; border-top: 1px solid var(--rule); margin: 36px 0; }
+article strong { color: var(--navy); }
+article em { color: var(--muted); }
+footer.foot {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+footer.foot a { color: var(--muted); }
+@media (max-width: 480px) {
+  header.masthead h1 { font-size: 32px; }
+  article h2 { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="masthead">
+  <h1>Intune Weekly</h1>
+  <div class="meta">Edition 6 &middot; May 26 - June 1, 2026</div>
+</header>
+<div class="ctas">
+  <a href="intune-weekly.pdf">Download PDF</a>
+  <a class="secondary" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">Follow on LinkedIn</a>
+</div>
+<article>
+<p>Service outages hit Autopatch &amp; Proactive Remediation; critical defaults let users wipe corporate devices.</p>
+<p><strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-02/intune-weekly.pdf">Download the full PDF →</a></strong></p>
+<p><strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">Subscribe on LinkedIn →</a></strong> to get the next edition every Tuesday</p>
+<hr />
+<h2>On the radar this week</h2>
+<ul>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1tr2pg3/any_user_can_unenroll_their_device/">Default Intune Settings Allow Users to Wipe Corporate Devices</a></strong> <em>(Reddit)</em> - Any enrolled user can unenroll and wipe their own corporate device via Company Portal by default - admins should hide remove/reset options in Tenant &gt; Customization immediately.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1tr2ol2/autopatch_group_errors/">Autopatch Groups &amp; Reporting Inaccessible - Multi-Region Outage</a></strong> <em>(Reddit)</em> - Admins in UK, Europe, and US lost access to Autopatch groups and update reports; validate configurations are intact now that access appears restored.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1tr3724/i_knew_it_service_degredation_reported_for/">Proactive Remediation Reporting Delayed Up to 7 Days</a></strong> <em>(Reddit)</em> - A confirmed service degradation means absence of remediation data should not be treated as success - do not make compliance or patching decisions based on reporting until resolved.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1ttlmmk/mysigninsmicrosoftcom/">mysignins.microsoft.com Down - New User MFA Registration Blocked</a></strong> <em>(Reddit)</em> - New users cannot register Microsoft Authenticator via the self-service portal; workaround is to manually add authentication methods in the Entra admin center.</li>
+<li><strong><a href="https://mc.merill.net/message/MC1330892">M365 Apps Policy Blade Leaving Intune Admin Center in June 2026</a></strong> <em>(Microsoft - Message Center)</em> - Admins must migrate policy creation and editing workflows to the Microsoft 365 Apps admin center before the June 2026 service release removes the current blade.</li>
+</ul>
+<hr />
+<h2>In this edition</h2>
+<p><strong>Landing in your tenant soon</strong></p>
+<ul>
+<li><a href="https://mc.merill.net/message/MC1330892">M365 Apps Policy Configuration Moves Out of Intune Admin Center</a></li>
+</ul>
+<p><strong>On the horizon</strong></p>
+<ul>
+<li><a href="https://www.reddit.com/r/entra/comments/1tt73bo/the_wait_is_finally_over_for_accidental_device/">Entra Device Soft Delete Now in Preview - BitLocker Keys and LAPS Preserved for 30 Days</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-news-you-can-use-may-2026/ba-p/4516353">Secure Boot Certificate Expiry Hits in June - AMA Scheduled June 4</a></li>
+</ul>
+<p><strong>Action required</strong></p>
+<ul>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tr2ol2/autopatch_group_errors/">Windows Autopatch Reporting and Groups Inaccessible Across Multiple Regions</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tr3724/i_knew_it_service_degredation_reported_for/">Proactive Remediation Reporting Delayed Up to 7 Days - Service Degradation Confirmed</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1ttlmmk/mysigninsmicrosoftcom/">mysignins.microsoft.com Security Info Page Not Loading - New User MFA Setup Blocked</a></li>
+</ul>
+<p><strong>What shipped</strong></p>
+<ul>
+<li><a href="https://techcommunity.microsoft.com/t5/microsoft-intune-blog/what-s-new-in-microsoft-intune-may/ba-p/4491984">What's New in Microsoft Intune - May 2026</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/whats-new">Intune RBAC Roles Now Automatically Inherit Copilot in Intune Access</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/whats-new">Remote Help for Windows 5.2.1037.0 Released with Performance Improvements</a></li>
+<li><a href="https://aka.ms/WindowsNewsYouCanUse/May2026">Windows Autopatch Hotpatch Now Default for Intune-Managed Devices; GCC Support Added</a></li>
+<li><a href="https://support.microsoft.com/help/5089573">May 2026 Windows 11 Non-Security Preview Update Now Available</a></li>
+<li><a href="https://www.reddit.com/r/SCCM/comments/1tr8t3j/cm_2603_update_available_no_new_adk/">ConfigMgr 2603 Update Now Available</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/intune-customer-success/unpacking-endpoint-management-is-back-and-we-ve-got-a-lot-to/ba-p/4514599">Unpacking Endpoint Management Video Series Returns</a></li>
+</ul>
+<p><strong>From the field</strong></p>
+<ul>
+<li><a href="https://techcommunity.microsoft.com/t5/microsoft-intune/broken-functionality-of-macoswificonfiguration-policies/m-p/4523591#M23507">macOS WiFi Configuration Policies Returning InternalServerError via Graph - Inaccessible in Portal</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tpfjb7/company_portal_failing/">Company Portal (UWP) Showing Widespread Failure Rates Across Multiple Tenants</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tt0dd3/new_release_alert_getintuneassignments_v1015_is/">Community Tool: Get-IntuneAssignments v1.0.15 Adds 7 New Policy Types</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tox16s/intune_management_extension_the_changelog/">Community Tool: IME Changelog Automation - What Changed Inside the Intune Management Extension</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tp3wke/zerotouch_autopilot_hardware_hash_upload_now/">Community Tool: Foundry OSD Now Supports Zero-Touch Autopilot Hardware Hash Upload</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tr2pg3/any_user_can_unenroll_their_device/">Default Intune Settings Allow End Users to Self-Unenroll and Wipe Their Own Corporate Devices</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/microsoft-intune/edge-displays-a-splash-screen-saying-sign-in-to-sync-your-data/m-p/4523908#M23510">Edge "Sign in to sync your data" Splash Screen Persists Despite Intune Configuration Profile</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tnqa5o/intune_microsoft_store_app_deployment_fails/">Microsoft Store App (New) Deployment Fails Reporting When Store Is Blocked by Policy</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tqz9zf/whats_new_in_microsoft_intune_may/">macOS Platform SSO During ADE Failing 30–50% of the Time</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1ts9g5s/what_if_secureboot_is_disabled_can_certificates/">Secure Boot Enablement May Break Windows Hello When BitLocker Is Active</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1ts6udr/intune_alternative_for_the_sccm_script_feature/">On-Demand Script Execution in Intune: Remediation Scripts as the SCCM "Scripts" Replacement</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tsta6w/can_i_upload_windows_device_into_autopilot/">Autopilot v2 Supports Manufacturer + Model + Serial Registration Without Hardware Hash</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tq3r9o/do_you_rely_on_winget_for_deploying_apps/">WinGet Auto-Update vs. Enterprise App Management vs. Patch My PC - Community Verdict</a></li>
+</ul>
+<hr />
+<p>For the full story on every item, <strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-02/intune-weekly.pdf">download the PDF</a></strong>. The PDF includes the radar, the upcoming-changes timeline, and the full body of each section.</p>
+<p>Never miss an edition - <strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">subscribe to Intune Weekly on LinkedIn</a></strong>.</p>
+</article>
+<footer class="foot">
+  <a href="https://ugurkocde.github.io/IntuneWeekly/">All editions</a>
+  <a href="https://ugurkocde.github.io/IntuneWeekly/rss.xml">RSS feed</a>
+</footer>
+</div>
+</body>
+</html>
