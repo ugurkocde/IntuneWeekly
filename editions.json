@@ -1,5 +1,111 @@
 [
   {
+    "date": "2026-06-09",
+    "edition_no": 7,
+    "date_range": "June 2 - 8, 2026",
+    "headline": "WUfB driver bypass, ASR silent disables, and Scripts reliability meltdown dominate a turbulent week.",
+    "pdf_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-09/intune-weekly.pdf",
+    "linkedin_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-09/linkedin-article.md",
+    "radar_items": [
+      {
+        "title": "WUfB Driver Policies Bypassed: 32 Drivers Force-Installed",
+        "why": "A Microsoft-acknowledged service incident (MO1332784) caused declined driver policies to be ignored across multiple tenants, so admins should audit driver inventory and declined states immediately.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1tus7af/driver_updates_wufb/"
+      },
+      {
+        "title": "ASR Rules Silently Disabled by Baseline + Policy Conflict",
+        "why": "Conflicting ASR assignments between a Security Baseline and an Endpoint Security profile silently disable rules with no conflict alert, leaving endpoints potentially unprotected without any visible warning.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1txnfox/bug_found_in_attack_surface_reduction_through_intune/"
+      },
+      {
+        "title": "Scripts & Remediations: Silent Failures and 8-Day Execution Gaps",
+        "why": "A 900-upvote community thread documents widespread silent failures, missing logs, and multi-day execution delays in Scripts and Remediations, making any automation relying on these features unreliable right now.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/sysadmin/comments/1tvks8e/intune_is_not_fit_for_purpose/"
+      },
+      {
+        "title": "Secure Boot CA 2023: Manual Task Trigger Required for Update",
+        "why": "BIOS updates alone do not trigger the Secure Boot CA 2023 certificate update, and the scheduled task must be manually invoked, so admins relying on passive rollout may miss the update entirely before compliance deadlines.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1tuqj8r/secure_boot_certificate_update_status_change/"
+      },
+      {
+        "title": "MDOP End of Support: Migrate MBAM and App-V to Intune",
+        "why": "MDOP passed end of extended support on April 14, 2026, meaning any remaining MBAM or App-V workloads are now unpatched security risks and migration to Intune equivalents should be treated as urgent.",
+        "source_label": "Blog - Customer Success",
+        "url": "https://techcommunity.microsoft.com/t5/intune-customer-success/mdop-is-out-of-support-what-to-do-next-with-microsoft-intune/ba-p/4526024"
+      }
+    ],
+    "timeline_items": [
+      {
+        "date": "2026-07-01",
+        "precision": "month",
+        "title": "Intune Suite - Unattended Remote Help for Windows - Remote Sign-in",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=499154",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-07-01",
+        "precision": "month",
+        "title": "[Entra] Microsoft Entra: Microsoft Security Copilot App Lifecycle Management Agent in Microsoft Entra",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=536578",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-07-31",
+        "precision": "day",
+        "title": "Plan for Change: Configure Microsoft 365 Apps policy settings in the Microsoft 365 Apps admin center",
+        "url": "https://mc.merill.net/message/MC1330892",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-17",
+        "precision": "day",
+        "title": "Upcoming change: Microsoft 365 Apps SAEC and MEC will unify",
+        "url": "https://mc.merill.net/message/MC1274325",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-24",
+        "precision": "day",
+        "title": "Plan for Change: Update to Intune Data Warehouse infrastructure",
+        "url": "https://mc.merill.net/message/MC1188216",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-30",
+        "precision": "day",
+        "title": "Microsoft Defender XDR: Retirement of in-app OS update notifications in Defender for Endpoint (iOS)",
+        "url": "https://mc.merill.net/message/MC1381122",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-31",
+        "precision": "day",
+        "title": "Reminder: \"Require approved client app\" control in Microsoft Entra Conditional Access will be retired in June 2026",
+        "url": "https://mc.merill.net/message/MC1220751",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-09-01",
+        "precision": "day",
+        "title": "2026 Microsoft 365 Packaging Update",
+        "url": "https://mc.merill.net/message/MC1304290",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      }
+    ]
+  },
+  {
     "date": "2026-06-02",
     "edition_no": 6,
     "date_range": "May 26 - June 1, 2026",

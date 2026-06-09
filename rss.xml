@@ -6,7 +6,62 @@
     <atom:link href="https://ugurkocde.github.io/IntuneWeekly/rss.xml" rel="self" type="application/rss+xml" />
     <description>A weekly briefing for Microsoft Intune admins. What is landing in your tenant soon, what is on the horizon, what shipped, and what the community is hitting in the field.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Jun 2026 16:16:06 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2026 16:16:12 +0000</lastBuildDate>
+    <item>
+      <title>Edition 7 - June 2 - 8, 2026</title>
+      <link>https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-09/</link>
+      <guid isPermaLink="true">https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-09/</guid>
+      <pubDate>Tue, 09 Jun 2026 12:00:00 +0000</pubDate>
+      <description><![CDATA[WUfB driver bypass, ASR silent disables, and Scripts reliability meltdown dominate a turbulent week.]]></description>
+      <content:encoded><![CDATA[<p>WUfB driver bypass, ASR silent disables, and Scripts reliability meltdown dominate a turbulent week.</p>
+<p><strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-09/intune-weekly.pdf">Download the full PDF →</a></strong></p>
+<p><strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">Subscribe on LinkedIn →</a></strong> to get the next edition every Tuesday</p>
+<hr />
+<h2>Community shoutout</h2>
+<p><strong>Simon Hartmann Eriksen &amp; Roy Klooster</strong> - <em>PPPC Builder for macOS</em>
+A lightweight web-based tool that generates macOS PPPC (.mobileconfig) profiles tailored for Microsoft Intune. Select an app (or upload its Info.plist), choose the required privacy permissions (Screen Recording, Full Disk Access, Camera, Microphone, Accessibility), and download a ready-to-deploy .mobileconfig for Intune. No Jamf dependency; simple, fast, Intune-focused. <a href="https://github.com/Simsen/PPPC-Builder">Read more</a></p>
+<h2>On the radar this week</h2>
+<ul>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1tus7af/driver_updates_wufb/">WUfB Driver Policies Bypassed: 32 Drivers Force-Installed</a></strong> <em>(Reddit)</em> - A Microsoft-acknowledged service incident (MO1332784) caused declined driver policies to be ignored across multiple tenants, so admins should audit driver inventory and declined states immediately.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1txnfox/bug_found_in_attack_surface_reduction_through_intune/">ASR Rules Silently Disabled by Baseline + Policy Conflict</a></strong> <em>(Reddit)</em> - Conflicting ASR assignments between a Security Baseline and an Endpoint Security profile silently disable rules with no conflict alert, leaving endpoints potentially unprotected without any visible warning.</li>
+<li><strong><a href="https://www.reddit.com/r/sysadmin/comments/1tvks8e/intune_is_not_fit_for_purpose/">Scripts &amp; Remediations: Silent Failures and 8-Day Execution Gaps</a></strong> <em>(Reddit)</em> - A 900-upvote community thread documents widespread silent failures, missing logs, and multi-day execution delays in Scripts and Remediations, making any automation relying on these features unreliable right now.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1tuqj8r/secure_boot_certificate_update_status_change/">Secure Boot CA 2023: Manual Task Trigger Required for Update</a></strong> <em>(Reddit)</em> - BIOS updates alone do not trigger the Secure Boot CA 2023 certificate update, and the scheduled task must be manually invoked, so admins relying on passive rollout may miss the update entirely before compliance deadlines.</li>
+<li><strong><a href="https://techcommunity.microsoft.com/t5/intune-customer-success/mdop-is-out-of-support-what-to-do-next-with-microsoft-intune/ba-p/4526024">MDOP End of Support: Migrate MBAM and App-V to Intune</a></strong> <em>(Blog - Customer Success)</em> - MDOP passed end of extended support on April 14, 2026, meaning any remaining MBAM or App-V workloads are now unpatched security risks and migration to Intune equivalents should be treated as urgent.</li>
+</ul>
+<hr />
+<h2>In this edition</h2>
+<p><strong>Landing in your tenant soon</strong></p>
+<ul>
+<li><a href="https://mc.merill.net/message/MC1381122">MDE iOS In-App OS Update Notifications Retiring Mid-July 2026</a></li>
+</ul>
+<p><strong>On the horizon</strong></p>
+<ul>
+<li><a href="https://techcommunity.microsoft.com/t5/intune-customer-success/mdop-is-out-of-support-what-to-do-next-with-microsoft-intune/ba-p/4526024">MDOP End of Support: Migration Path to Intune</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/made-for-developers-and-agents-windows-365-at-build-2026/ba-p/4519041">Windows 365 Developer-Focused Enhancements Announced at Build 2026</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/microsoft-intune/intune-macos-ade-support-for-minimum-macos-version-enforcement/m-p/4525688#M23530">macOS ADE: No Supported Method to Enforce Minimum OS Version Before Platform SSO Registration</a></li>
+</ul>
+<p><strong>Action required</strong></p>
+<ul>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tuqj8r/secure_boot_certificate_update_status_change/">Secure Boot CA 2023 Certificate Update: Widespread Admin Confusion, Manual Trigger Available</a></li>
+</ul>
+<p><strong>From the field</strong></p>
+<ul>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tus7af/driver_updates_wufb/">WUfB Driver Update Policies Bypassed: 32 Drivers Installed Across Multiple Tenants Simultaneously</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1txnfox/bug_found_in_attack_surface_reduction_through_intune/">ASR Rules Silently Disabled When Security Baseline and Endpoint Security Profile Conflict</a></li>
+<li><a href="https://www.reddit.com/r/sysadmin/comments/1txls2t/intune_assistance_application_not_syncing_to_devices/">Newly Created Entra Groups and App Deployments Not Reporting or Applying This Week</a></li>
+<li><a href="https://www.reddit.com/r/sysadmin/comments/1txp89w/motherboard_replaced_on_an_entraintune_joined/">Motherboard Replacement Breaks Entra/Intune Authentication Due to TPM/Hardware Hash Change</a></li>
+<li><a href="https://www.reddit.com/r/sysadmin/comments/1tvks8e/intune_is_not_fit_for_purpose/">Scripts and Remediations: Inconsistent Execution, No Logs, and 8-Day Gaps Draw Community Fury</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/microsoft-intune/intune-app-inventory-graph/m-p/4524828#M23524">Intune App Inventory Graph API Returns 403 Despite GUI Access</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tvjzpv/autopilot_v2_device_rename_and_reboot_and_oobe/">Autopilot v2 Device Rename Causes Unexpected OOBE Reboot Behaviour</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1txo76c/deploying_intune_remote_help_for_modern_endpoint/">Remote Help Rollout: Edge Cases in Mixed Build Environments, SKU Confusion Persists</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1twmj89/robopack_900_a_year_patch_my_pc_3500_no_brainer/">Third-Party App Patching Tool Comparison: Robopack vs. Patch My PC vs. WAU</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tydpgd/what_are_your_rookiemistakes_on_intune/">Intune Naming Schemes: Community Tool nametune.vercel.app Gaining Traction</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1tyd3i7/intune_or_gpo_for_hybrid_joined_endpoints/">Hybrid Joined Devices: Community Advises Against Managing via Both GPO and Intune Simultaneously</a></li>
+</ul>
+<hr />
+<p>For the full story on every item, <strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-09/intune-weekly.pdf">download the PDF</a></strong>. The PDF includes the radar, the upcoming-changes timeline, and the full body of each section.</p>
+<p>Never miss an edition - <strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">subscribe to Intune Weekly on LinkedIn</a></strong>.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Edition 6 - May 26 - June 1, 2026</title>
       <link>https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-02/</link>
