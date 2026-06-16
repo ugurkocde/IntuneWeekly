@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intune Weekly - Edition 8 - June 9 - 15, 2026</title>
+<meta name="description" content="Kerberos RC4 deadline looms, KB5094126 breaks HP devices, and Intune Devices blade goes dark.">
+<link rel="alternate" type="application/rss+xml" title="Intune Weekly" href="https://ugurkocde.github.io/IntuneWeekly/rss.xml">
+<link rel="icon" href="data:,">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<meta property="og:title" content="Intune Weekly - Edition 8 - June 9 - 15, 2026">
+<meta property="og:description" content="Kerberos RC4 deadline looms, KB5094126 breaks HP devices, and Intune Devices blade goes dark.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-16/">
+<style>
+:root {
+  --bg: #faf8f5;
+  --ink: #1a1a1a;
+  --navy: #1a2744;
+  --gold: #d9c692;
+  --rule: #cfcac1;
+  --muted: #6b6760;
+  --link: #1a2744;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+body {
+  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+  line-height: 1.65;
+  font-size: 16px;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+header.masthead { border-bottom: 2px solid var(--navy); padding-bottom: 14px; margin-bottom: 28px; }
+header.masthead h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: -0.5px;
+  color: var(--navy);
+}
+header.masthead .meta {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+.ctas { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0 32px; }
+.ctas a {
+  display: inline-block;
+  padding: 11px 18px;
+  background: var(--navy);
+  color: var(--bg);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+}
+.ctas a.secondary { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
+article h1 { display: none; }
+article h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 26px;
+  margin: 36px 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+  color: var(--navy);
+  font-weight: 700;
+}
+article h3 { font-size: 18px; margin: 22px 0 8px; font-weight: 700; }
+article a { color: var(--link); }
+article p { margin: 12px 0; }
+article ul { padding-left: 22px; }
+article li { margin-bottom: 8px; }
+article hr { border: none; border-top: 1px solid var(--rule); margin: 36px 0; }
+article strong { color: var(--navy); }
+article em { color: var(--muted); }
+footer.foot {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+footer.foot a { color: var(--muted); }
+@media (max-width: 480px) {
+  header.masthead h1 { font-size: 32px; }
+  article h2 { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="masthead">
+  <h1>Intune Weekly</h1>
+  <div class="meta">Edition 8 &middot; June 9 - 15, 2026</div>
+</header>
+<div class="ctas">
+  <a href="intune-weekly.pdf">Download PDF</a>
+  <a class="secondary" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">Follow on LinkedIn</a>
+</div>
+<article>
+<p>Kerberos RC4 deadline looms, KB5094126 breaks HP devices, and Intune Devices blade goes dark.</p>
+<p><strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-16/intune-weekly.pdf">Download the full PDF →</a></strong></p>
+<p><strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">Subscribe on LinkedIn →</a></strong> to get the next edition every Tuesday</p>
+<hr />
+<h2>Community shoutout</h2>
+<p><strong>Florian Salzmann &amp; Jannik Reinhard</strong> - <em>CMTrace.dev - log viewer in your browser</em>
+A free, zero-install log viewer for ConfigMgr, SCCM, and Intune. Open massive client logs, color-code severity, and chase down error codes - all in the browser, with files processed 100% locally so nothing leaves your machine. <a href="https://cmtrace.dev/">Read more</a></p>
+<h2>On the radar this week</h2>
+<ul>
+<li><strong><a href="https://support.microsoft.com/topic/1ebcda33-720a-4da8-93c1-b0496e1910dc">Kerberos RC4 Enforcement: 30-Day Remediation Deadline</a></strong> <em>(Microsoft - Release Health)</em> - July 2026 Windows security updates permanently remove Audit mode - any remaining RC4 dependencies will cause authentication failures the moment the update applies.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1u5er12/updatenightmare/">KB5094126 Causing BSODs and Boot Failures on HP Devices</a></strong> <em>(Reddit)</em> - The June 2026 cumulative update is actively breaking HP ProBook/EliteBook fleets with boot failures, BitLocker recovery prompts, and EFI partition issues - admins should pause update rings for HP devices now.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1u7anmf/intune_devices_blade_down_uk/">Intune Devices Blade Outage Across Multiple Regions</a></strong> <em>(Reddit)</em> - The Devices blade was confirmed unavailable on 16 June across UK, Austria, Netherlands, and Brazil - admins should monitor Service Health for an incident ID and verify console access is restored.</li>
+<li><strong><a href="https://techcommunity.microsoft.com/t5/intune-customer-success/known-issue-upgrading-microsoft-tunnel-version-20260129-1/ba-p/4517935">Microsoft Tunnel v20260129.1 Stuck - Remediation Script Out</a></strong> <em>(Blog - Customer Success)</em> - Servers on this version are stalling mid-upgrade and need Microsoft's mstunnel-patch-2602 script or a full reinstall to restore tunnel functionality.</li>
+<li><strong><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Controlled Configuration for Defender Antivirus (Preview)</a></strong> <em>(Microsoft - In Development)</em> - This upcoming feature will override Group Policy, ConfigMgr, and local changes to Defender settings - co-managed environments need to review governance implications before it lands.</li>
+</ul>
+<hr />
+<h2>In this edition</h2>
+<p><strong>Landing in your tenant soon</strong></p>
+<ul>
+<li><a href="https://support.microsoft.com/topic/1ebcda33-720a-4da8-93c1-b0496e1910dc">Kerberos RC4 Enforcement Mode Arrives with July 2026 Windows Security Update</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Enrollment Time Grouping for Apple ADE Policies Goes GA</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Intune Data Warehouse (Beta) Power BI Connector Retirement Begins</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Scope Tags Now Respected in EPM Reports</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Device Control Policy Support Extends to MDE Security Settings Management</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1u38h9w/maintenance_window_is_now_ga_for_windows_update/">Maintenance Window for Windows Update for Business Now GA</a></li>
+</ul>
+<p><strong>On the horizon</strong></p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Android Personally Owned Work Profile Devices Migrate to Android Management API (AMAPI)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Controlled Configuration for Defender Antivirus Settings (Public Preview)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Strict Tunnel Mode for Microsoft Tunnel on Android Enterprise</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Multiple Managed Accounts for App Protection Policies (iOS and Android)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Client-Driven Compliance Evaluation for Windows Devices (Preview)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">In-Place Renewal for Cloud PKI Issuing Certification Authorities</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Agentic Identity for the Policy Configuration Agent (Public Preview)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Custom Compliance Settings Coming to macOS</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Grant Enhanced MTD Security Permissions on Android Enterprise</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Silence Apps on Managed Home Screen During Authentication Prompts (Android)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Block Bluetooth Sharing Setting Added to Android Enterprise Settings Catalog</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Disable MAC Address Randomization on macOS Wi-Fi Profiles</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">802.1x Wired Networks Profile Coming to iOS/iPadOS</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">STIG Audit Security Baseline for GCC High Tenants</a></li>
+</ul>
+<p><strong>Action required</strong></p>
+<ul>
+<li><a href="https://techcommunity.microsoft.com/t5/intune-customer-success/known-issue-upgrading-microsoft-tunnel-version-20260129-1/ba-p/4517935">Microsoft Tunnel Servers on Version 20260129.1 Are Stuck - Remediation Script Available</a></li>
+<li><a href="https://support.microsoft.com/topic/1ebcda33-720a-4da8-93c1-b0496e1910dc">Kerberos RC4 Enforcement Deadline: Remediate RC4 Dependencies Before July 2026 Update</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1u7anmf/intune_devices_blade_down_uk/">Intune Devices Blade Outage Reported Across Multiple Regions</a></li>
+</ul>
+<p><strong>What shipped</strong></p>
+<ul>
+<li><a href="https://support.microsoft.com/help/5094126">June 2026 Windows Security Update (KB5094126) Now Available</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/intune-customer-success/how-enterprise-app-management-secures-your-app-catalog-from/ba-p/4528361">Enterprise App Management: Security Architecture Deep-Dive Published</a></li>
+</ul>
+<p><strong>From the field</strong></p>
+<ul>
+<li><a href="https://www.reddit.com/r/Intune/comments/1u5er12/updatenightmare/">KB5094126 Causing Boot Failures, BSODs, BitLocker Recovery, and HP EFI Partition Issues</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1u5esc9/increase_size_of_efi_with_a_script/">HP EFI Partition (100 MB) Causing Recurring Windows Update Failures</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/microsoft-intune/canreset-value-flipping-on-cloud-only-devices/m-p/4527692#M23539">CanReset Value Randomly Flipping on Passwordless Cloud-Only Windows 11 Devices</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1u185pl/are_we_good_with_the_new_secure_boot_certificate/">Secure Boot CA 2023 Rollout: Confidence Level Confusion and What "Under Observation" Actually Means</a></li>
+<li><a href="https://www.reddit.com/r/sysadmin/comments/1u69v44/secure_boot_ca_2023_update_deadline_approaching/">Secure Boot CA 2023 Expiry Behaviour for Offline and Non-SB Devices Clarified by Community</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1u25c20/we_built_a_browserbased_cmtrace_because_we_needed/">Browser-Based CMTrace Log Viewer (cmtrace.dev) Built for Autopilot ESP Troubleshooting</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1u1tdhs/easily_modify_registry_keys_with_intune/">Browser-Based Registry-to-Remediation Script Generator</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1u298dr/built_a_simple_edge_extension_inventory_script/">Edge Extension Inventory Script Sending Data to Azure Log Analytics</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/microsoft-intune/windows-app-update-notification/m-p/4526926#M23536">Windows App (Remote Desktop) Update Notification Requiring User Interaction - No Silent Update Option Found</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1u39nsk/acrobat_and_wdachow/">WDAC and Adobe Acrobat Update Compatibility Causing Consistent Failures</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1u6sp5f/just_spinning_up_our_intune_pilot_any_gotchas_or/">SCCM-to-Intune Migration: Real-World Gotchas from Admins Making the Switch</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1u2dj25/free_powershell_webinar_series_with_microsoft/">Free Two-Part PowerShell Webinar Series for Intune/ConfigMgr Admins (June 23 and 30)</a></li>
+</ul>
+<hr />
+<p>For the full story on every item, <strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-16/intune-weekly.pdf">download the PDF</a></strong>. The PDF includes the radar, the upcoming-changes timeline, and the full body of each section.</p>
+<p>Never miss an edition - <strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">subscribe to Intune Weekly on LinkedIn</a></strong>.</p>
+</article>
+<footer class="foot">
+  <a href="https://ugurkocde.github.io/IntuneWeekly/">All editions</a>
+  <a href="https://ugurkocde.github.io/IntuneWeekly/rss.xml">RSS feed</a>
+</footer>
+</div>
+</body>
+</html>

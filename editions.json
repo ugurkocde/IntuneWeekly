@@ -1,5 +1,111 @@
 [
   {
+    "date": "2026-06-16",
+    "edition_no": 8,
+    "date_range": "June 9 - 15, 2026",
+    "headline": "Kerberos RC4 deadline looms, KB5094126 breaks HP devices, and Intune Devices blade goes dark.",
+    "pdf_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-16/intune-weekly.pdf",
+    "linkedin_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-16/linkedin-article.md",
+    "radar_items": [
+      {
+        "title": "Kerberos RC4 Enforcement: 30-Day Remediation Deadline",
+        "why": "July 2026 Windows security updates permanently remove Audit mode \u2014 any remaining RC4 dependencies will cause authentication failures the moment the update applies.",
+        "source_label": "Microsoft - Release Health",
+        "url": "https://support.microsoft.com/topic/1ebcda33-720a-4da8-93c1-b0496e1910dc"
+      },
+      {
+        "title": "KB5094126 Causing BSODs and Boot Failures on HP Devices",
+        "why": "The June 2026 cumulative update is actively breaking HP ProBook/EliteBook fleets with boot failures, BitLocker recovery prompts, and EFI partition issues \u2014 admins should pause update rings for HP devices now.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1u5er12/updatenightmare/"
+      },
+      {
+        "title": "Intune Devices Blade Outage Across Multiple Regions",
+        "why": "The Devices blade was confirmed unavailable on 16 June across UK, Austria, Netherlands, and Brazil \u2014 admins should monitor Service Health for an incident ID and verify console access is restored.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1u7anmf/intune_devices_blade_down_uk/"
+      },
+      {
+        "title": "Microsoft Tunnel v20260129.1 Stuck \u2014 Remediation Script Out",
+        "why": "Servers on this version are stalling mid-upgrade and need Microsoft's mstunnel-patch-2602 script or a full reinstall to restore tunnel functionality.",
+        "source_label": "Blog - Customer Success",
+        "url": "https://techcommunity.microsoft.com/t5/intune-customer-success/known-issue-upgrading-microsoft-tunnel-version-20260129-1/ba-p/4517935"
+      },
+      {
+        "title": "Controlled Configuration for Defender Antivirus (Preview)",
+        "why": "This upcoming feature will override Group Policy, ConfigMgr, and local changes to Defender settings \u2014 co-managed environments need to review governance implications before it lands.",
+        "source_label": "Microsoft - In Development",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development"
+      }
+    ],
+    "timeline_items": [
+      {
+        "date": "2026-07-01",
+        "precision": "month",
+        "title": "Intune Suite - Unattended Remote Help for Windows - Remote Sign-in",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=499154",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-07-01",
+        "precision": "month",
+        "title": "[Entra] Microsoft Entra: Microsoft Security Copilot App Lifecycle Management Agent in Microsoft Entra",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=536578",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-07-31",
+        "precision": "day",
+        "title": "Plan for Change: Configure Microsoft 365 Apps policy settings in the Microsoft 365 Apps admin center",
+        "url": "https://mc.merill.net/message/MC1330892",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-17",
+        "precision": "day",
+        "title": "Upcoming change: Microsoft 365 Apps SAEC and MEC will unify",
+        "url": "https://mc.merill.net/message/MC1274325",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-24",
+        "precision": "day",
+        "title": "Plan for Change: Update to Intune Data Warehouse infrastructure",
+        "url": "https://mc.merill.net/message/MC1188216",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-30",
+        "precision": "day",
+        "title": "Microsoft Defender XDR: Retirement of in-app OS update notifications in Defender for Endpoint (iOS)",
+        "url": "https://mc.merill.net/message/MC1381122",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-31",
+        "precision": "day",
+        "title": "Reminder: \"Require approved client app\" control in Microsoft Entra Conditional Access will be retired in June 2026",
+        "url": "https://mc.merill.net/message/MC1220751",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-09-01",
+        "precision": "day",
+        "title": "2026 Microsoft 365 Packaging Update",
+        "url": "https://mc.merill.net/message/MC1304290",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      }
+    ]
+  },
+  {
     "date": "2026-06-09",
     "edition_no": 7,
     "date_range": "June 2 - 8, 2026",
