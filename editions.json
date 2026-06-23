@@ -1,5 +1,111 @@
 [
   {
+    "date": "2026-06-23",
+    "edition_no": 9,
+    "date_range": "June 16 - 22, 2026",
+    "headline": "Intune Suite rolls into E3/E5, IME breaks WDAC, and Win32 app delivery goes HTTPS-only.",
+    "pdf_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-23/intune-weekly.pdf",
+    "linkedin_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-23/linkedin-article.md",
+    "radar_items": [
+      {
+        "title": "IME Update Blocked by WDAC \u2014 Autopilot Enrollment Failures",
+        "why": "A new runtime DLL in IME versions 1.99.101.0\u20131.101.103.0 is not covered by existing WDAC policies, actively breaking Autopilot provisioning across affected tenants with no official fix yet.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1u7ymim/psa_new_update_to_ime_is_bieng_blocked_by_wdac/"
+      },
+      {
+        "title": "Win32 App Delivery HTTPS-Only \u2014 MCC Nodes Must Be Updated",
+        "why": "As of June 16, unupdated Microsoft Connected Cache nodes silently fall back to direct internet download for all Win32 apps, negating bandwidth savings until nodes are patched.",
+        "source_label": "Microsoft - Learn",
+        "url": "https://techcommunity.microsoft.com/t5/intune-customer-success/how-to-enable-https-support-for-microsoft-connected-cache-for/ba-p/4496173"
+      },
+      {
+        "title": "Advanced Intune Suite Features Rolling into M365 E3/E5 July 1",
+        "why": "EPM, Remote Help, Cloud PKI, and EAM begin lighting up for eligible EMS E3/ME3/ME5 tenants now, but rollout is uneven \u2014 admins should validate which features are live and which are still blocked before July 1.",
+        "source_label": "Microsoft - Message Center",
+        "url": "https://techcommunity.microsoft.com/t5/microsoft-intune-blog/microsoft-365-adds-advanced-microsoft-intune-solutions-at-scale/ba-p/4474272"
+      },
+      {
+        "title": "M365 Apps Policy Config Removed from Intune Admin Center in June 2606",
+        "why": "The June 2606 service release removes the M365 Apps policy page from the Intune admin center entirely, redirecting to the Apps admin center \u2014 admins must migrate workflows and bookmarks before the release lands.",
+        "source_label": "Microsoft - Message Center",
+        "url": "https://mc.merill.net/message/MC1330892"
+      },
+      {
+        "title": "CapabilityAccessManager.db-wal Ballooning to 70 GB on Windows Devices",
+        "why": "A never-closed SQLite read transaction is causing this WAL file to grow until C: drives fill completely; safe-mode deletion is the only current remediation and no Microsoft fix is confirmed.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/sysadmin/comments/1u8n7f5/capability_access_manager_db_growing_out_of_control/"
+      }
+    ],
+    "timeline_items": [
+      {
+        "date": "2026-07-01",
+        "precision": "month",
+        "title": "Intune Suite - Unattended Remote Help for Windows - Remote Sign-in",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=499154",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-07-01",
+        "precision": "month",
+        "title": "[Entra] Microsoft Entra: Microsoft Security Copilot App Lifecycle Management Agent in Microsoft Entra",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=536578",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-07-31",
+        "precision": "day",
+        "title": "Plan for Change: Configure Microsoft 365 Apps policy settings in the Microsoft 365 Apps admin center",
+        "url": "https://mc.merill.net/message/MC1330892",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-17",
+        "precision": "day",
+        "title": "Upcoming change: Microsoft 365 Apps SAEC and MEC will unify",
+        "url": "https://mc.merill.net/message/MC1274325",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-24",
+        "precision": "day",
+        "title": "Plan for Change: Update to Intune Data Warehouse infrastructure",
+        "url": "https://mc.merill.net/message/MC1188216",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-30",
+        "precision": "day",
+        "title": "Microsoft Defender XDR: Retirement of in-app OS update notifications in Defender for Endpoint (iOS)",
+        "url": "https://mc.merill.net/message/MC1381122",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-31",
+        "precision": "day",
+        "title": "Reminder: \"Require approved client app\" control in Microsoft Entra Conditional Access will be retired in June 2026",
+        "url": "https://mc.merill.net/message/MC1220751",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-09-01",
+        "precision": "day",
+        "title": "2026 Microsoft 365 Packaging Update",
+        "url": "https://mc.merill.net/message/MC1304290",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      }
+    ]
+  },
+  {
     "date": "2026-06-16",
     "edition_no": 8,
     "date_range": "June 9 - 15, 2026",
