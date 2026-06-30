@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intune Weekly - Edition 10 - June 23 - 29, 2026</title>
+<meta name="description" content="MAA breaks automation, BitLocker hits HP devices, and Intune Suite lands in E3/E5 tenants.">
+<link rel="alternate" type="application/rss+xml" title="Intune Weekly" href="https://ugurkocde.github.io/IntuneWeekly/rss.xml">
+<link rel="icon" href="data:,">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<meta property="og:title" content="Intune Weekly - Edition 10 - June 23 - 29, 2026">
+<meta property="og:description" content="MAA breaks automation, BitLocker hits HP devices, and Intune Suite lands in E3/E5 tenants.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-30/">
+<style>
+:root {
+  --bg: #faf8f5;
+  --ink: #1a1a1a;
+  --navy: #1a2744;
+  --gold: #d9c692;
+  --rule: #cfcac1;
+  --muted: #6b6760;
+  --link: #1a2744;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+body {
+  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+  line-height: 1.65;
+  font-size: 16px;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+header.masthead { border-bottom: 2px solid var(--navy); padding-bottom: 14px; margin-bottom: 28px; }
+header.masthead h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: -0.5px;
+  color: var(--navy);
+}
+header.masthead .meta {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+.ctas { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0 32px; }
+.ctas a {
+  display: inline-block;
+  padding: 11px 18px;
+  background: var(--navy);
+  color: var(--bg);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+}
+.ctas a.secondary { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
+article h1 { display: none; }
+article h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 26px;
+  margin: 36px 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+  color: var(--navy);
+  font-weight: 700;
+}
+article h3 { font-size: 18px; margin: 22px 0 8px; font-weight: 700; }
+article a { color: var(--link); }
+article p { margin: 12px 0; }
+article ul { padding-left: 22px; }
+article li { margin-bottom: 8px; }
+article hr { border: none; border-top: 1px solid var(--rule); margin: 36px 0; }
+article strong { color: var(--navy); }
+article em { color: var(--muted); }
+footer.foot {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+footer.foot a { color: var(--muted); }
+@media (max-width: 480px) {
+  header.masthead h1 { font-size: 32px; }
+  article h2 { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="masthead">
+  <h1>Intune Weekly</h1>
+  <div class="meta">Edition 10 &middot; June 23 - 29, 2026</div>
+</header>
+<div class="ctas">
+  <a href="intune-weekly.pdf">Download PDF</a>
+  <a class="secondary" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">Follow on LinkedIn</a>
+</div>
+<article>
+<p>MAA breaks automation, BitLocker hits HP devices, and Intune Suite lands in E3/E5 tenants.</p>
+<p><strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-30/intune-weekly.pdf">Download the full PDF →</a></strong></p>
+<p><strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">Subscribe on LinkedIn →</a></strong> to get the next edition every Tuesday</p>
+<hr />
+<h2>Community shoutout</h2>
+<p><strong>Mert Ozsoy</strong> <em>(@mertozsoy)</em> - <em>IntuneWin32AppUninstall</em>
+A PowerShell GUI tool that scans the Windows Registry for MSI-installed applications and automatically generates Microsoft Intune-compatible Detection and Remediation scripts, so admins can build clean Win32 app uninstall logic without hand-writing the detection rules. <a href="https://github.com/mertozsoy/IntuneWin32AppUninstall">Read more</a></p>
+<h2>On the radar this week</h2>
+<ul>
+<li><strong><a href="https://patchmypc.com/blog/intune-multi-admin-approval-the-x-msft-approval-justification-error/">Multi Admin Approval Breaking Graph API Automation</a></strong> <em>(Blog - Intune)</em> - Any service principal or runbook making Intune or Entra Graph write calls will fail with an approval error this week unless you explicitly exclude the app registration - audit and fix before production breaks.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1uelb1x/bitlocker_prompt_issue_post_june_2026_monthly/">BitLocker Recovery Loops on HP EliteDesk After KB5094126</a></strong> <em>(Reddit)</em> - The June Secure Boot certificate update is forcing BitLocker recovery prompts on HP EliteDesk 800 G6 devices - hold broad patch deployment and prioritise BIOS 2.26 updates on affected models now.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1uf9zpz/intune_suite_is_live_in_our_tenant_go_check_yours/">Intune Suite Live in E3/E5 Tenants - Remote Help July 1</a></strong> <em>(Reddit)</em> - Intune Suite capabilities including Remote Help are already activating in some tenants ahead of the July 1 cutover, so admins should configure and communicate the change to help desk teams this week.</li>
+<li><strong><a href="https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-intune-and-apple-platform-updates-what-to-expect-after/ba-p/4531058">Legacy Apple MDM Update Policies Retiring - Migrate to DDM</a></strong> <em>(Blog - Customer Success)</em> - Legacy MDM software update workloads will be removed from the Intune UI when macOS/iOS 27 ships, and the beta cycle is open now - waiting until GA will leave you without update control.</li>
+<li><strong><a href="https://www.reddit.com/r/Intune/comments/1ugdtbj/wipe_command_in_new_intune_ui/">New Wipe UI Causing Accidental Single Wipes</a></strong> <em>(Reddit)</em> - The redesigned device page's radio-button wipe flow has already caused multiple admins to issue Single Wipe (enrollment preserved) when intending a full wipe - brief your team before anyone runs a wipe command this week.</li>
+</ul>
+<hr />
+<h2>In this edition</h2>
+<p><strong>Landing in your tenant soon</strong></p>
+<ul>
+<li><a href="https://www.reddit.com/r/Intune/comments/1uf9zpz/intune_suite_is_live_in_our_tenant_go_check_yours/">Intune Suite Add-ons Rolling Into M365 E3/E5 Tenants - Remote Help Arrives July 1</a></li>
+<li><a href="https://mc.merill.net/message/MC1403402">macOS and iOS/iPadOS Minimum Version Bump Tied to Fall OS 27 Release</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/whats-new">Windows Security Baseline 25H2 Updated: New IE11 COM Automation Block Setting</a></li>
+</ul>
+<p><strong>On the horizon</strong></p>
+<ul>
+<li><a href="https://patchmypc.com/blog/intune-epm-system-settings-network-and-time-sync-elevation/">EPM Expanding to System-Level Network Configuration and Time Sync</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Controlled Configuration for Defender Antivirus: Intune Becomes Single Source of Truth</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Device Control Policy Support Extended to Defender for Endpoint Security Settings Management</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Custom Compliance Settings Coming to macOS</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Client-Driven Compliance Evaluation for Windows to Reduce Reporting Lag</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Agentic Identity for the Policy Configuration Agent</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Scope Tags Support for EPM Reports</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-intune-and-apple-platform-updates-what-to-expect-after/ba-p/4531058">Intune Planning for Apple OS 27 - Legacy MDM Update Policies Being Retired</a></li>
+<li><a href="https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2022">Windows Server 2022 Hotpatch Support Extended to October 2027</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/point-in-time-restore-for-windows-11-is-now-generally-available/ba-p/4508101">Point-in-Time Restore for Windows 11 Now Generally Available</a></li>
+</ul>
+<p><strong>Action required</strong></p>
+<ul>
+<li><a href="https://patchmypc.com/blog/intune-multi-admin-approval-the-x-msft-approval-justification-error/">Multi Admin Approval Now Enforcing on Graph API Write Calls - Automation Will Break</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/in-development">Intune Data Warehouse Beta Connector Deprecation in Power BI</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1uelb1x/bitlocker_prompt_issue_post_june_2026_monthly/">Secure Boot Certificate Update (KB5094126) Triggering BitLocker Recovery on Some HP Devices</a></li>
+</ul>
+<p><strong>What shipped</strong></p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/whats-new">Enterprise App Management Auto-Update and GCC High/DoD Support Now GA</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/whats-new">macOS PKG Available Apps Now Auto-Update Without User Interaction</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/whats-new">Remote Help Now Supports RemoteApp Sessions in Azure Virtual Desktop</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/whats-new">Updated Security Baseline for Microsoft 365 Apps for Enterprise (v2512)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/whats-new">New Android Enterprise Settings Catalog Entries: AI Agent Function Blocking, Bluetooth Sharing Block, and More</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/whats-new">WPA3-Personal Now Supported in iOS/iPadOS Wi-Fi Profiles</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/whats-new">Microsoft Tunnel Adds RHEL 9.7 Support</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/whats-new">New Defender Antivirus Settings for Linux Server: Offline Intelligence Updates and Scheduled Scans</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/whats-new">Trustd Mobile Now Supported as an Intune MTD Partner</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/whats-new">Self-Service Onboarding for MDM Compliance Partners Now Available</a></li>
+<li><a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/whats-new">ChatGPT Added as an Intune Protected App</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/intune-customer-success/how-to-configure-macos-privacy-preferences-policy-control-pppc/ba-p/4530406">macOS Privacy Preferences Policy Control (PPPC) Now Configurable via Settings Catalog</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/best-practices-for-deploying-secure-boot-certificate-updates/ba-p/4529884">Best Practices Published for Secure Boot Certificate Deployment</a></li>
+</ul>
+<p><strong>From the field</strong></p>
+<ul>
+<li><a href="https://www.reddit.com/r/Intune/comments/1ugdtbj/wipe_command_in_new_intune_ui/">New Intune Device Page UI Makes Wipe Workflow Confusing - Admins Accidentally Running Single Wipe</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/microsoft-intune/intune-platform-scripts-never-target-devices-0-targeted-devices/m-p/4531649#M23557">Platform Scripts Showing 0 Targeted Devices Despite Healthy IME and Entra Join</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1uhwf57/microsoft_just_announced_system_level_network/">Intune Suite First Impressions: Cloud PKI and EPM Praised, Enterprise App Catalog and Remote Help Draw Criticism</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1uix2ed/enterprise_app_catalog_first_look/">Enterprise App Catalog in Production: No Running Process Handling, Pricing vs. Patch My PC Debate</a></li>
+<li><a href="https://www.reddit.com/r/sysadmin/comments/1ujihy0/errors_with_pin_login_and_windows_hello_for/">WHfB Cloud Kerberos Trust Provisioning Failures on Hybrid-Joined Windows 11 24H2</a></li>
+<li><a href="https://www.reddit.com/r/sysadmin/comments/1udm4ch/m365s_webview2_problem_is_now_sitting_in_the/">M365 WebView2 Traffic Bypassing Delivery Optimization - Now in Microsoft Product Group Backlog</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1ug3ywr/device_reverting_to_previous_business_after_reset/">Autopilot Devices Reverting to Previous Company's Branding After Reset</a></li>
+<li><a href="https://www.reddit.com/r/Intune/comments/1ueczb0/packaging_apps_using_winget/">Winget System Context Installs Failing Without Explicit Source Configuration</a></li>
+<li><a href="https://www.reddit.com/r/sysadmin/comments/1ug8q7y/how_do_yall_stop_token_theft_in_education/">Token Theft in Higher Education: Conditional Access Options When Devices Cannot Be Managed</a></li>
+<li><a href="https://www.reddit.com/r/entra/comments/1uh5a5d/i_horde_akams_shortcuts/">Curated aka.ms / cmd.ms Shortcut Reference for Intune, Entra, and Defender Admins</a></li>
+<li><a href="https://www.reddit.com/r/sysadmin/comments/1ue8n8q/speed_up_preparing_windows_screen/">"Preparing Windows" Delays on First Login in Shared Healthcare Environments</a></li>
+</ul>
+<hr />
+<p>For the full story on every item, <strong><a href="https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-30/intune-weekly.pdf">download the PDF</a></strong>. The PDF includes the radar, the upcoming-changes timeline, and the full body of each section.</p>
+<p>Never miss an edition - <strong><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7454605096895746048">subscribe to Intune Weekly on LinkedIn</a></strong>.</p>
+</article>
+<footer class="foot">
+  <a href="https://ugurkocde.github.io/IntuneWeekly/">All editions</a>
+  <a href="https://ugurkocde.github.io/IntuneWeekly/rss.xml">RSS feed</a>
+</footer>
+</div>
+</body>
+</html>

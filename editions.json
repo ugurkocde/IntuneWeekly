@@ -1,5 +1,127 @@
 [
   {
+    "date": "2026-06-30",
+    "edition_no": 10,
+    "date_range": "June 23 - 29, 2026",
+    "headline": "MAA breaks automation, BitLocker hits HP devices, and Intune Suite lands in E3/E5 tenants.",
+    "pdf_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-30/intune-weekly.pdf",
+    "linkedin_url": "https://ugurkocde.github.io/IntuneWeekly/editions/2026-06-30/linkedin-article.md",
+    "radar_items": [
+      {
+        "title": "Multi Admin Approval Breaking Graph API Automation",
+        "why": "Any service principal or runbook making Intune or Entra Graph write calls will fail with an approval error this week unless you explicitly exclude the app registration \u2014 audit and fix before production breaks.",
+        "source_label": "Blog - Intune",
+        "url": "https://patchmypc.com/blog/intune-multi-admin-approval-the-x-msft-approval-justification-error/"
+      },
+      {
+        "title": "BitLocker Recovery Loops on HP EliteDesk After KB5094126",
+        "why": "The June Secure Boot certificate update is forcing BitLocker recovery prompts on HP EliteDesk 800 G6 devices \u2014 hold broad patch deployment and prioritise BIOS 2.26 updates on affected models now.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1uelb1x/bitlocker_prompt_issue_post_june_2026_monthly/"
+      },
+      {
+        "title": "Intune Suite Live in E3/E5 Tenants \u2014 Remote Help July 1",
+        "why": "Intune Suite capabilities including Remote Help are already activating in some tenants ahead of the July 1 cutover, so admins should configure and communicate the change to help desk teams this week.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1uf9zpz/intune_suite_is_live_in_our_tenant_go_check_yours/"
+      },
+      {
+        "title": "Legacy Apple MDM Update Policies Retiring \u2014 Migrate to DDM",
+        "why": "Legacy MDM software update workloads will be removed from the Intune UI when macOS/iOS 27 ships, and the beta cycle is open now \u2014 waiting until GA will leave you without update control.",
+        "source_label": "Blog - Customer Success",
+        "url": "https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-intune-and-apple-platform-updates-what-to-expect-after/ba-p/4531058"
+      },
+      {
+        "title": "New Wipe UI Causing Accidental Single Wipes",
+        "why": "The redesigned device page's radio-button wipe flow has already caused multiple admins to issue Single Wipe (enrollment preserved) when intending a full wipe \u2014 brief your team before anyone runs a wipe command this week.",
+        "source_label": "Reddit",
+        "url": "https://www.reddit.com/r/Intune/comments/1ugdtbj/wipe_command_in_new_intune_ui/"
+      }
+    ],
+    "timeline_items": [
+      {
+        "date": "2026-07-01",
+        "precision": "month",
+        "title": "[Entra] Microsoft Entra: Microsoft Security Copilot App Lifecycle Management Agent in Microsoft Entra",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=536578",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-07-24",
+        "precision": "day",
+        "title": "Plan for Change: Intune moving to support iOS/iPadOS 18 and higher later this year",
+        "url": "https://mc.merill.net/message/MC1403401",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-07-31",
+        "precision": "day",
+        "title": "Plan for Change: Configure Microsoft 365 Apps policy settings in the Microsoft 365 Apps admin center",
+        "url": "https://mc.merill.net/message/MC1330892",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-01",
+        "precision": "month",
+        "title": "Intune Suite - Unattended Remote Help for Windows - Remote Sign-in",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=499154",
+        "label": "In development",
+        "source": "Roadmap"
+      },
+      {
+        "date": "2026-08-17",
+        "precision": "day",
+        "title": "Upcoming change: Microsoft 365 Apps SAEC and MEC will unify",
+        "url": "https://mc.merill.net/message/MC1274325",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-24",
+        "precision": "day",
+        "title": "Plan for Change: Update to Intune Data Warehouse infrastructure",
+        "url": "https://mc.merill.net/message/MC1188216",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-30",
+        "precision": "day",
+        "title": "Microsoft Defender XDR: Retirement of in-app OS update notifications in Defender for Endpoint (iOS)",
+        "url": "https://mc.merill.net/message/MC1381122",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-08-31",
+        "precision": "day",
+        "title": "Reminder: \"Require approved client app\" control in Microsoft Entra Conditional Access will be retired in June 2026",
+        "url": "https://mc.merill.net/message/MC1220751",
+        "label": "Plan for Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-09-01",
+        "precision": "day",
+        "title": "2026 Microsoft 365 Packaging Update",
+        "url": "https://mc.merill.net/message/MC1304290",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      },
+      {
+        "date": "2026-10-24",
+        "precision": "day",
+        "title": "Plan for Change: Intune moving to support macOS 15 and higher later this year",
+        "url": "https://mc.merill.net/message/MC1403402",
+        "label": "Breaking Change",
+        "source": "Message Center"
+      }
+    ]
+  },
+  {
     "date": "2026-06-23",
     "edition_no": 9,
     "date_range": "June 16 - 22, 2026",
